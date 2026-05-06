@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Führerschein Informationen - Fahrschule Holst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="holstLogo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+<div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link" aria-label="Zur Startseite">
+                        <img src="holstLogo.png" alt="Fahrschule Holst" class="site-logo">
+                    </a>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Navigation umschalten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" id="nav-home">Startseite</a></li>
+                        <li><a href="index.html#prices" id="nav-price">Preise</a></li>
+                        <li><a href="index.html#booking" id="nav-booking">Termin buchen</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="dropbtn" id="nav-more" type="button" aria-haspopup="true" aria-expanded="false">Mehr</button>
+                            <ul class="dropdown-menu" aria-label="Weitere Navigation">
+                                <li><a href="fuehrerscheininfo.html" id="nav-license">Führerscheininfo</a></li>
+                                <li><a href="index.html#resources" id="nav-resources">Ressourcen</a></li>
+                                <li><a href="index.html#professional-training" id="nav-training">Weiterbildung</a></li>
+                                <li><a href="index.html#handicap" id="nav-handicap">Handicap</a></li>
+                                <li><a href="index.html#team" id="nav-team">Team</a></li>
+                                <li><a href="index.html#partners" id="nav-partners">Partner</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#contact" class="btn-nav-cta" id="nav-contact">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="language-selector">
+                    <button type="button" class="google-translate-toggle" id="google-translate-toggle">Deutsch</button>
+                    <div id="google_translate_element" class="google-translate-element" aria-hidden="true"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 id="license-hero-title">Führerschein Informationen</h1>
+                <p id="license-hero-subtitle">Alles was Sie über Führerscheine wissen müssen</p>
+            </div>
+        </section>
+
+        <section id="license-info" class="container license-info-section">
+            <div class="license-tabs">
+                <button class="license-tab-btn active" data-tab="qualifications" id="tab-qualifications">Voraussetzungen</button>
+                <button class="license-tab-btn" data-tab="b197" id="tab-b197">B197 Automatik</button>
+                <button class="license-tab-btn" data-tab="disability" id="tab-disability">Behinderung</button>
+                <button class="license-tab-btn" data-tab="fe-requirements" id="tab-fe-requirements">FE Anforderungen</button>
+                <button class="license-tab-btn" data-tab="basic-tasks" id="tab-basic-tasks">Grundaufgaben</button>
+                <button class="license-tab-btn" data-tab="bf17" id="tab-bf17">BF17 Regeln</button>
+                <button class="license-tab-btn" data-tab="learning-materials" id="tab-learning-materials">Lernmaterialien</button>
+                <button class="license-tab-btn offers-btn" data-tab="offers" id="tab-offers">Angebote</button>
+            </div>
+
+            <div class="license-content">
+                <!-- General Qualifications Tab -->
+                <div id="qualifications" class="license-tab active">
+                    <h2 id="qualifications-title">Allgemeine Voraussetzungen</h2>
+                    <div class="license-card">
+                        <h3 id="qualifications-health-title">Gesundheitliche Voraussetzungen</h3>
+                        <ul>
+                            <li id="qualifications-health-1">Sehtest bei einem Augenarzt oder Optiker</li>
+                            <li id="qualifications-health-2">Ärztliches Gutachten (bei bestimmten Erkrankungen)</li>
+                            <li id="qualifications-health-3">Erste-Hilfe-Kurs (9 Unterrichtseinheiten)</li>
+                            <li id="qualifications-health-4">Bei bestimmten Medikamenten: Gutachten vom Betriebsmediziner</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Mindestalter nach Fahrerlaubnisklassen</h3>
+                        <table class="license-table">
+                            <thead>
+                                <tr>
+                                    <th>Klasse</th>
+                                    <th>Mindestalter</th>
+                                    <th>Begleitetes Fahren</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A1 (Leichte Krafträder)</td>
+                                    <td>16 Jahre</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>A2 (Mittelgewichtige Krafträder)</td>
+                                    <td>18 Jahre</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>A (Schwere Krafträder)</td>
+                                    <td>24 Jahre (20 Jahre mit A2 + 2 Jahre)</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>B (PKW)</td>
+                                    <td>18 Jahre</td>
+                                    <td>17 Jahre</td>
+                                </tr>
+                                <tr>
+                                    <td>BE (PKW mit Anhänger)</td>
+                                    <td>18 Jahre</td>
+                                    <td>17 Jahre</td>
+                                </tr>
+                                <tr>
+                                    <td>C1 (LKW bis 7,5t)</td>
+                                    <td>18 Jahre</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>C (LKW über 7,5t)</td>
+                                    <td>21 Jahre (18 Jahre mit C1 + 3 Jahre)</td>
+                                    <td>—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Wohnsitzanforderung</h3>
+                        <p>Sie müssen seit mindestens 185 Tagen ununterbrochen in Deutschland wohnen, um eine deutsche Fahrerlaubnis zu erwerben. Bei kürzerem Aufenthalt kann unter bestimmten Umständen eine ausländische Fahrerlaubnis anerkannt werden.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Straffreiheit</h3>
+                        <p>Bei bestimmten Straftaten (z.B. Trunkenheit am Steuer, Fahrerflucht) kann die Erteilung der Fahrerlaubnis versagt werden. Die Fahrerlaubnisbehörde prüft Ihre Zuverlässigkeit.</p>
+                    </div>
+                </div>
+
+                <!-- B197 Automatic License Tab -->
+                <div id="b197" class="license-tab">
+                    <h2 id="b197-title">B197 - Automatische Fahrerlaubnis</h2>
+                    <div class="license-card">
+                        <h3>Was ist die B197 Fahrerlaubnis?</h3>
+                        <p>Die B197 Fahrerlaubnis ist eine spezielle Fahrerlaubnis der Klasse B, die ausschließlich für Kraftfahrzeuge mit Automatikgetriebe gilt. Sie ermöglicht das Führen von Fahrzeugen mit automatischem Getriebe, nicht jedoch von Fahrzeugen mit Schaltgetriebe.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Voraussetzungen für B197</h3>
+                        <ul>
+                            <li>Mindestalter: 17 Jahre (begleitetes Fahren ab 17 möglich)</li>
+                            <li>Erste-Hilfe-Kurs (9 Unterrichtseinheiten)</li>
+                            <li>Theoretische Prüfung</li>
+                            <li>Praktische Prüfung auf einem Automatikfahrzeug</li>
+                            <li>Sehtest und ärztliches Gutachten</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Besonderheiten der B197 Lizenz</h3>
+                        <p>Mit der B197 Fahrerlaubnis dürfen Sie nur Fahrzeuge mit Automatikgetriebe führen. Wenn Sie später auch Schaltfahrzeuge fahren möchten, müssen Sie eine praktische Prüfung auf einem Schaltfahrzeug ablegen, um die volle B-Klasse zu erhalten.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Kosten für B197 Ausbildung</h3>
+                        <p>Die Ausbildungskosten für die B197 Fahrerlaubnis sind in der Regel etwas günstiger als für die volle B-Klasse, da weniger Fahrstunden benötigt werden. Die genauen Kosten variieren je nach Fahrschule und individuellem Lernfortschritt.</p>
+                    </div>
+                </div>
+
+                <!-- Disability Training Tab -->
+                <div id="disability" class="license-tab">
+                    <h2 id="disability-title">Ausbildung für Menschen mit Behinderung</h2>
+                    <div class="license-card">
+                        <h3>Unsere Expertise</h3>
+                        <p>Seit 2007 bilden wir Menschen mit Behinderungen aus. Unsere Fahrlehrerinnen und Fahrlehrer sind speziell fortgebildet und verfügen über jahrelange Erfahrung in der Handicap-Ausbildung.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Barrierefreiheit</h3>
+                        <p>Alle unsere Fahrschulen sind barrierefrei zu erreichen. Bushaltestellen befinden sich in unmittelbarer Umgebung. Der theoretische Unterricht wird integrativ mit behinderten und nichtbehinderten Fahrschülern durchgeführt.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Fachgutachten</h3>
+                        <p>Wir erstellen Fahrproben und Gutachten zur Beurteilung der Fahrtauglichkeit. Unsere Experten helfen Ihnen und Ihrem Facharzt bei der Entscheidungsfindung.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Förderung</h3>
+                        <p>Wir unterstützen Sie bei der beruflichen Rehabilitation durch die Deutsche Rentenversicherung. Beratung und individuelle Lösungen für Ihre Situation.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Kontakt für Handicap-Ausbildung</h3>
+                        <p>Bei Fragen zur Ausbildung für Menschen mit Behinderungen stehen wir Ihnen gerne zur Verfügung:</p>
+                        <p><strong>Telefon:</strong> 040 / 763 43 77<br><strong>Mobil:</strong> 0176 / 23 30 88 64</p>
+                    </div>
+                </div>
+
+                <!-- FE Requirements Tab -->
+                <div id="fe-requirements" class="license-tab">
+                    <h2 id="fe-requirements-title">FE - Führerschein auf Probe</h2>
+                    <div class="license-card">
+                        <h3>Was ist die FE?</h3>
+                        <p>Die FE (Führerschein auf Probe) ist eine zweijährige Probezeit für Fahranfänger. Während dieser Zeit gelten strengere Regeln und bei Verstößen können Punkte in Flensburg oder ein Aufbauseminar verhängt werden.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>FE für Klasse A (Motorrad)</h3>
+                        <ul>
+                            <li>Mindestalter: 24 Jahre für A1, 25 Jahre für A2, 25 Jahre für A</li>
+                            <li>Theoretische und praktische Prüfung</li>
+                            <li>Zweijährige Probezeit</li>
+                            <li>Bei Verstößen: Aufbauseminar oder verlängerte Probezeit</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>FE für Klasse B (PKW)</h3>
+                        <ul>
+                            <li>Mindestalter: 18 Jahre (17 Jahre mit Begleitperson)</li>
+                            <li>Theoretische und praktische Prüfung</li>
+                            <li>Zweijährige Probezeit</li>
+                            <li>Bei 1-3 Punkten: Aufbauseminar</li>
+                            <li>Bei 4-5 Punkten: Aufbauseminar + verkehrspsychologische Beratung</li>
+                            <li>Bei 6-7 Punkten: Probezeit verlängert auf 4 Jahre</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>FE für Klasse C (LKW)</h3>
+                        <ul>
+                            <li>Mindestalter: 21 Jahre (18 Jahre mit C1E)</li>
+                            <li>Zusätzliche Anforderungen für Berufskraftfahrer</li>
+                            <li>Grundqualifikation nach BKrFQG</li>
+                            <li>Zweijährige Probezeit</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>FE für Anhänger (BE, C1E, CE)</h3>
+                        <ul>
+                            <li>Hängt von der Zugfahrzeugklasse ab</li>
+                            <li>Zusätzliche praktische Prüfung</li>
+                            <li>Gilt für Fahrzeuggespanne über 3,5t</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Basic Tasks Tab -->
+                <div id="basic-tasks" class="license-tab">
+                    <h2 id="basic-tasks-title">Grundaufgaben der Fahrausbildung</h2>
+                    <div class="license-card">
+                        <h3>Grundaufgabe 1: Sicherer Umgang mit dem Fahrzeug</h3>
+                        <ul>
+                            <li>Sicheres Ein- und Aussteigen</li>
+                            <li>Richtiges Anschnallen</li>
+                            <li>Korrektes Einstellen von Sitz und Spiegel</li>
+                            <li>Bedienung aller Bedienelemente</li>
+                            <li>Sicherer Umgang mit Motor und Getriebe</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Grundaufgabe 2: Beherrschung der Fahrzeugführung</h3>
+                        <ul>
+                            <li>Anfahren und Halten</li>
+                            <li>Geradeausfahren</li>
+                            <li>Kurvenfahren</li>
+                            <li>Abbiegen</li>
+                            <li>Rückwärtsfahren</li>
+                            <li>Parken</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Grundaufgabe 3: Verkehrsbeobachtung</h3>
+                        <ul>
+                            <li>Beobachtung des Verkehrsgeschehens</li>
+                            <li>Erkennen von Gefahren</li>
+                            <li>Rechtzeitiges Reagieren</li>
+                            <li>Spiegel nutzen</li>
+                            <li>Toter Winkel beachten</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Grundaufgabe 4: Verhalten im Verkehr</h3>
+                        <ul>
+                            <li>Einhaltung der Verkehrsvorschriften</li>
+                            <li>Rücksichtnahme auf andere Verkehrsteilnehmer</li>
+                            <li>Anpassung an Verkehrssituation</li>
+                            <li>Vorausschauendes Fahren</li>
+                            <li>Umweltbewusstes Fahren</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Grundaufgabe 5: Umweltbewusste und energiesparende Fahrweise</h3>
+                        <ul>
+                            <li>Schonender Umgang mit dem Fahrzeug</li>
+                            <li>Wirtschaftliche Fahrweise</li>
+                            <li>Umweltfreundliches Verhalten</li>
+                            <li>Reduzierung von Abgasen</li>
+                            <li>Energieeffiziente Techniken</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BF17 Rules Tab -->
+                <div id="bf17" class="license-tab">
+                    <h2 id="bf17-title">BF17 - Begleitetes Fahren ab 17</h2>
+                    <div class="license-card">
+                        <h3>Was ist BF17?</h3>
+                        <p>BF17 ermöglicht es Jugendlichen ab 17 Jahren, bereits vor Erreichen der Volljährigkeit mit einer Begleitperson Auto zu fahren. Die Begleitperson muss mindestens 30 Jahre alt sein, seit mindestens 5 Jahren die Fahrerlaubnis der Klasse B besitzen und nicht mehr als 3 Punkte im Fahreignungsregister haben.</p>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Voraussetzungen für BF17</h3>
+                        <ul>
+                            <li>Mindestalter: 17 Jahre</li>
+                            <li>Theoretische Prüfung bestanden</li>
+                            <li>Mindestens eine Begleitperson</li>
+                            <li>Begleitperson: mind. 30 Jahre, B-Klasse seit 5 Jahren, max. 3 Punkte</li>
+                            <li>Nächtliches Fahrverbot von 23:00 bis 5:00 Uhr (Ausnahmen möglich)</li>
+                                <li>Begleitperson muss auf dem Beifahrersitz sitzen</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Regeln während BF17</h3>
+                        <ul>
+                            <li>Immer eine eingetragene Begleitperson mitführen</li>
+                            <li>Nächtliches Fahrverbot (23:00 - 5:00 Uhr)</li>
+                            <li>Keine Alkoholgrenze von 0,0 Promille</li>
+                            <li>Bei Verstößen gelten die gleichen Sanktionen wie für Volljährige</li>
+                            <li>Probezeit beginnt mit 18 Jahren</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Vorteile von BF17</h3>
+                        <ul>
+                            <li>Früherer Erwerb von Fahrpraxis</li>
+                            <li>Günstigere Versicherungstarife</li>
+                            <li>Mehr Sicherheit durch Begleitung erfahrener Fahrer</li>
+                            <li>Reduzierte Probezeit nach Volljährigkeit</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>BF17 in der Probezeit</h3>
+                        <p>Während der zweijährigen Probezeit gelten für BF17-Fahrer dieselben Regeln wie für alle Fahranfänger. Bei Verstößen können Punkte in Flensburg oder ein Aufbauseminar verhängt werden.</p>
+                    </div>
+                </div>
+
+                <!-- Learning Materials Tab -->
+                <div id="learning-materials" class="license-tab">
+                    <h2 id="learning-materials-title">Lernmaterialien und Ressourcen</h2>
+                    <div class="license-card">
+                        <h3>Theorie-Lernmaterialien</h3>
+                        <ul>
+                            <li>Offizielles Fragen- und Antwortenkatalog der Fahrerlaubnisbehörde</li>
+                            <li>Lernsoftware und Apps für die theoretische Prüfung</li>
+                            <li>Lernbücher und Karteikarten</li>
+                            <li>Online-Lernplattformen</li>
+                            <li>Video-Tutorials zu Verkehrsregeln</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Praxis-Lernmaterialien</h3>
+                        <ul>
+                            <li>Fahrlehrbücher mit praktischen Tipps</li>
+                            <li>Übungsmaterialien für Grundfahraufgaben</li>
+                            <li>Checklisten für Fahrstunden</li>
+                            <li>Video-Anleitungen für Fahrmanöver</li>
+                            <li>Simulationssoftware für Fahrschulen</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Offizielle Quellen</h3>
+                        <ul>
+                            <li><a href="https://www.bast.de" target="_blank">Bundesanstalt für Straßenwesen (BASt)</a></li>
+                            <li><a href="https://www.tuev-nord.de" target="_blank">TÜV Nord</a></li>
+                            <li><a href="https://www.dekraf.de" target="_blank">Deutsche Kraftfahrer Akademie</a></li>
+                            <li><a href="https://www.fahrschule.de" target="_blank">Informationsportal Fahrschule</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Prüfungsvorbereitung</h3>
+                        <ul>
+                            <li>Musterprüfungen online</li>
+                            <li>Probefahrten zur Vorbereitung</li>
+                            <li>Beratungsgespräche mit Fahrlehrern</li>
+                            <li>Lernpläne und Zeitmanagement</li>
+                            <li>Stressbewältigung und Prüfungsangst</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Offers Tab -->
+                <div id="offers" class="license-tab">
+                    <h2 id="offers-title">Spezielle Angebote und Rabatte</h2>
+                    <div class="license-card">
+                        <h3>Fahrsimulator-Training</h3>
+                        <p>Moderne Fahrsimulatoren für risikofreies Üben aller Fahrsituationen. Ideal zur Vorbereitung auf die praktische Prüfung und zur Verbesserung der Fahrtechnik.</p>
+                        <ul>
+                            <li>Realistische Fahrsimulation</li>
+                            <li>Verschiedene Fahrzeugtypen</li>
+                            <li>Notfallsituationen trainieren</li>
+                            <li>Kostengünstiger als reale Fahrstunden</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>FES-Seminar (Fahrerschulung für Einsteiger)</h3>
+                        <p>Das FES-Seminar ist eine freiwillige Schulung für Fahranfänger, die während der Probezeit absolviert werden kann. Es vermittelt wichtige Kenntnisse für sicheres Fahren.</p>
+                        <ul>
+                            <li>4 Unterrichtseinheiten Theorie</li>
+                            <li>1 Unterrichtseinheit Praxis</li>
+                            <li>Reduzierung der Probezeit um 1 Jahr</li>
+                            <li>Günstigere Versicherungsbeiträge</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>ASF-Seminare (Aufbau-Seminare für Fahranfänger)</h3>
+                        <p>Bei Verstößen während der Probezeit können ASF-Seminare angeordnet werden. Diese Seminare helfen, das Fahrverhalten zu verbessern und Punkte zu vermeiden.</p>
+                        <ul>
+                            <li>ASF 1: 4 Unterrichtseinheiten (bei 1-3 Punkten)</li>
+                            <li>ASF 2: 6 Unterrichtseinheiten (bei 4-5 Punkten)</li>
+                            <li>Verkehrspsychologische Beratung</li>
+                            <li>Prävention von Verkehrsunfällen</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Sonderangebote für Berufskraftfahrer</h3>
+                        <ul>
+                            <li>Grundqualifikation nach BKrFQG</li>
+                            <li>Weiterbildung für Gefahrguttransport</li>
+                            <li>Schulungen für Ladungssicherung</li>
+                            <li>Spezielle Kurse für Busfahrer</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Rabatte und Finanzierung</h3>
+                        <ul>
+                            <li>Ratenpläne für Ausbildungskosten</li>
+                            <li>Rabatte für Mehrfachausbildungen</li>
+                            <li>Gruppenrabatte für Freunde/Familie</li>
+                            <li>Förderung durch Arbeitsagentur</li>
+                        </ul>
+                    </div>
+
+                    <div class="license-card">
+                        <h3>Kontakt für individuelle Angebote</h3>
+                        <p>Gerne erstellen wir Ihnen ein individuelles Angebot passend zu Ihren Bedürfnissen:</p>
+                        <p><strong>Telefon:</strong> 040 / 763 43 77<br><strong>E-Mail:</strong> info@fahrschule-holst.de</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Fahrschule Holst Hamburg</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span class="social-icon">f</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <span class="social-icon">𝕏</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span class="social-icon">📷</span>
+                </a>
+            </div>
+            <div class="legal-links">
+                <a href="impressum.html">Impressum</a> |
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Dropdown menu toggle
+        const navMoreButton = document.getElementById('nav-more');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        navMoreButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('active');
+        });
+
+        // License tabs functionality
+        const licenseTabBtns = document.querySelectorAll('.license-tab-btn');
+        const licenseTabs = document.querySelectorAll('.license-tab');
+
+        licenseTabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and tabs
+                licenseTabBtns.forEach(b => b.classList.remove('active'));
+                licenseTabs.forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding tab
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item.dropdown')) {
+                dropdownMenu.classList.remove('active');
+            }
+            if (!e.target.closest('.language-selector')) {
+                const googleTranslateElement = document.getElementById('google_translate_element');
+                googleTranslateElement?.classList.remove('active');
+                googleTranslateElement?.setAttribute('aria-hidden', 'true');
+            }
+        });
+    </script>
+    <script src="translate.js"></script>
+</body>
+</html>

@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrschule Holst | Redesign Concept</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="top"></a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#top" class="logo-link" aria-label="Zur Startseite">
+                        <img src="holstLogo.png" alt="Fahrschule Holst" class="site-logo">
+                    </a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Navigation umschalten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#prices" id="nav-price">Preise</a></li>
+                        <li><a href="#booking" id="nav-booking">Termin buchen</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="dropbtn" id="nav-more" type="button" aria-haspopup="true" aria-expanded="false">Mehr</button>
+                            <ul class="dropdown-menu" aria-label="Weitere Navigation">
+                                <li><a href="fuehrerscheininfo.html" id="nav-license">Führerscheininfo</a></li>
+                                <li><a href="#resources" id="nav-resources">Ressourcen</a></li>
+                                <li><a href="#professional-training" id="nav-training">Weiterbildung</a></li>
+                                <li><a href="#handicap" id="nav-handicap">Handicap</a></li>
+                                <li><a href="#team" id="nav-team">Team</a></li>
+                                <li><a href="#partners" id="nav-partners">Partner</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact" class="btn-nav-cta" id="nav-contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="language-selector">
+                    <button type="button" class="google-translate-toggle" id="google-translate-toggle">Deutsch</button>
+                    <div id="google_translate_element" class="google-translate-element" aria-hidden="true"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 id="hero-title">Dein Führerschein in <br><span class="highlight">Hamburg.</span></h1>
+            <p id="hero-text">Sicher, modern und ohne Stress zum Ziel. Jetzt Termin für die erste Fahrstunde sichern.</p>
+            <div class="hero-cta-container">
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-primary" id="hero-cta">Jetzt starten</a>
+                    <a href="#prices" class="btn-secondary" id="hero-prices">Preise ansehen</a>
+                    <a href="#booking" class="btn-tertiary" id="hero-book">Termin buchen</a>
+                </div>
+                <a href="https://www.werkenntdenbesten.de/e/52848305/fahrschule/seevetal/fahrschule-holst-bewertungen.html"
+                   class="review-badge"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Bewertungen auf Wer kennt den Besten">
+                    <img src="werkenntdenbesten-logo.png" alt="Wer kennt den Besten Bewertungen" class="review-logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container slideshow-section">
+        <h2 class="section-title" id="slideshow-title">Bilder unserer Fahrschulen</h2>
+        <div class="slideshow" id="slideshow">
+            <div class="slide active">
+                <img src="Holst_Hanhoopsfeld.jpg" alt="Fahrschule Hanhoopsfeld">
+            </div>
+            <div class="slide">
+                <img src="Holst_meckelfeld.jpg" alt="Fahrschule Meckelfeld">
+            </div>
+            <div class="slide">
+                <img src="Holst_hittfeld.jpg" alt="Fahrschule Hittfeld">
+            </div>
+            <div class="slide">
+                <img src="holstLogo.png" alt="Fahrschule Holst Logo">
+            </div>
+            <button class="slide-btn prev" aria-label="Vorheriges Bild">‹</button>
+            <button class="slide-btn next" aria-label="Nächstes Bild">›</button>
+            <div class="slide-dots" id="slide-dots"></div>
+        </div>
+    </section>
+
+    <section id="prices" class="container">
+        <h2 class="section-title" id="prices-title">Transparente Preise</h2>
+        <div class="price-grid">
+            <div class="price-card">
+                <h3 id="price-class-b">Klasse B</h3>
+                <p class="price-tag" id="price-fee-b">Grundgebühr: 290€</p>
+                <ul>
+                    <li id="price-feature-b1">Theoretischer Unterricht</li>
+                    <li id="price-feature-b2">Moderne Schulungsfahrzeuge</li>
+                    <li id="price-feature-b3">Inkl. Lern-App</li>
+                </ul>
+            </div>
+            <div class="price-card featured">
+                <h3 id="price-class-b197">B197 (Automatik)</h3>
+                <p class="price-tag" id="price-fee-b197">Grundgebühr: 250€</p>
+                <ul>
+                    <li id="price-feature-b197-1">Mix aus Schaltung & Automatik</li>
+                    <li id="price-feature-b197-2">Keine Prüfungsangst</li>
+                    <li id="price-feature-b197-3">Zukunftssicher fahren</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container contact-section">
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h2 id="contact-heading">Bereit für die Straße?</h2>
+                <p id="contact-text">Schreib uns eine Nachricht oder komm direkt in der Fahrschule vorbei.</p>
+                <form>
+                    <input type="text" placeholder="Dein Name" required>
+                    <input type="email" placeholder="Deine E-Mail" required>
+                    <textarea placeholder="Deine Nachricht" rows="4"></textarea>
+                    <button type="submit" class="btn-primary" id="contact-cta">Anfrage senden</button>
+                    <a href="https://maxi.fahrschulmanager.de/?t=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SkRkWE4wYjIxbGNrbGtJam9pTVRJNU1qSTBOQ0lzSWtOc2FXVnVkRWxrSWpveE1UTTVOamtzSWtaVFRWSnBaMmgwY3lJNklpSXNJbEJFUVZKcFoyaDBjeUk2SWlJc0lsVnpaWEp1WVcxbElqb2lJaXdpZFc1cGNYVmxYMjVoYldVaU9pSWlMQ0pFYVhOd2JHRjVUbUZ0WlNJNklpSXNJa1pwY25OMFRtRnRaU0k2SWlJc0lreGhjM1JPWVcxbElqb2lJaXdpVTJsd1oyRjBaVTUxYlcxbGNpSTZJaUlzSWtKbGRHRkhjbTkxY0NJNlptRnNjMlVzSWxKdmJHVWlPaUpOWVhocElpd2lVM1ZpWVdOamIzVnVkQ0k2ZEhKMVpTd2lSbE5OVW05c1pTSTZXeUpEYkc5MVpIeDhSbE5OSWl3aVEyeHZkV1I4ZkZCRFVDSXNJa1JEUm1Gb2NuTmphSFZzWlNJc0ltVk1RbVVpTENKR1lXaHlaVzVNWlhKdVpXNU5ZWGhXWlhKM1lXeDBkVzVuSWl3aVQyNXNhVzVsVlhCa1lYUmxjM3g4Umt4VGVXNWpJaXdpVDI1c2FXNWxWWEJrWVhSbGMzeDhSa3hUZVc1algxUnBibmtpTENKUGJteHBibVZWY0dSaGRHVnpmSHhHVEZZaUxDSlBibXhwYm1WVmNHUmhkR1Z6Zkh4R1RGWmZVSEpsVkdWemRGTmxjblpwWTJVaUxDSlBibXhwYm1WVmNHUmhkR1Z6Zkh4R1RGWmZWWEJrWVhSbGNpSXNJazl1YkdsdVpWVndaR0YwWlhOOGZFWk1WbDlXYjJkbGJFTm9aV05ySWl3aVQyNXNhVzVsVlhCa1lYUmxjM3g4UmxOTklpd2lUMjVzYVc1bFZYQmtZWFJsYzN4OFJsTk5YMU41Ym1NaUxDSlFjbTlrZFd0MFpYeDhVR3gxY3lJc0lsTk5VMVpsY25OaGJtUWlMQ0pUZEdGeWRHaHBiR1psSWwwc0ltNWlaaUk2TVRjM056YzBOVFV6Tnl3aVpYaHdJam94TnpjM056VXlOek0zTENKcFlYUWlPakUzTnpjM05EVTFNemQ5LlE4V0FnVzVmNkd2cDkteFVZamlwNEozR0QxS3ZPNGQzV25NaF9YdmtrLWM%3D&color1=E60015&color2=000000&s.useSession=false" class="btn-secondary" id="online-registration-button" target="_blank" rel="noopener">Online Anmeldung</a>
+                </form>
+            </div>
+            <div class="contact-locations">
+                <h2 class="section-title" id="locations-title">Unsere Standorte &amp; Find us</h2>
+                <div class="locations-grid">
+                    <article class="location-card" data-location="winsener">
+                        <h3>Harburg – Winsener Straße 16</h3>
+                        <p>21077 Hamburg</p>
+                        <p>
+                            <a href="tel:+49407634377">040 / 7 63 43 77</a><br>
+                            <a href="tel:+494076114982">040 / 761 14 98 2</a>
+                        </p>
+                        <p><a href="https://goo.gl/maps/PmH9TBtMqET2" target="_blank" rel="noopener">Google Maps</a></p>
+                    </article>
+                    <article class="location-card" data-location="hanhoopsfeld">
+                        <h3>Harburg – Hanhoopsfeld 18</h3>
+                        <p>21079 Hamburg</p>
+                        <p>
+                            <a href="tel:+49407631121">040 / 763 11 21</a><br>
+                            <a href="tel:+494076117651">040 / 761 17 651</a>
+                        </p>
+                        <p><a href="https://www.google.de/maps/place/Hanhoopsfeld+18,+21079+Hamburg/" target="_blank" rel="noopener">Google Maps</a></p>
+                    </article>
+                    <article class="location-card" data-location="meckelfeld">
+                        <h3>Meckelfeld – Mattenmoorstr. 17</h3>
+                        <p>21217 Seevetal</p>
+                        <p>
+                            <a href="tel:+49407688180">040 / 7 68 81 80</a><br>
+                            <a href="tel:+494076116376">040 / 761 16 376</a>
+                        </p>
+                        <p><a href="https://goo.gl/maps/Z3eNVcnLSbE2" target="_blank" rel="noopener">Google Maps</a></p>
+                    </article>
+                    <article class="location-card" data-location="hittfeld">
+                        <h3>Hittfeld – Hittfelder Schulstr. 15</h3>
+                        <p>21218 Seevetal</p>
+                        <p>
+                            <a href="tel:+494105570643">04105 / 57 06 43</a><br>
+                            <a href="tel:+494105570644">04105 / 57 06 44</a>
+                        </p>
+                        <p><a href="https://goo.gl/maps/Zb1f3E8UVsJ2" target="_blank" rel="noopener">Google Maps</a></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="container booking-section">
+        <div class="booking-card">
+            <h2 id="booking-title">Termin online buchen</h2>
+            <p id="booking-text">Wähle deinen Termin aus dem Kalender oder rufe uns direkt an für sofortige Hilfe.</p>
+            <div class="booking-grid">
+                <div class="booking-item">
+                    <strong id="booking-slot-mondothurs">Mo - Do</strong>
+                    <span id="booking-time-mondothurs">09:00 - 13:00</span>
+                    <span id="booking-time-mondothurs2">14:00 - 18:00</span>
+                </div>
+                <div class="booking-item">
+                    <strong id="booking-slot-friday">Freitag</strong>
+                    <span id="booking-time-friday">10:00 - 14:30</span>
+                </div>
+                <div class="booking-item">
+                    <strong id="booking-slot-online">Online</strong>
+                    <span id="booking-option-online">Termin per Kalender</span>
+                </div>
+                <div class="booking-item">
+                    <strong id="booking-slot-phone">Telefon</strong>
+                    <span id="booking-phone-number">040 / 7 63 43 77</span>
+                </div>
+            </div>
+            <div class="booking-actions">
+                <a href="https://calendar.google.com/calendar/u/0/r?cid=mycalmstudio%40gmail.com" class="btn-primary btn-booking" target="_blank" rel="noopener" id="booking-button">Google Kalender</a>
+                <a href="tel:+905391031180" class="btn-secondary btn-booking" id="booking-phone">Per Telefon buchen</a>
+                <a href="mailto:mycalmstudio@gmail.com" class="btn-tertiary btn-booking" id="booking-email">Per E-Mail buchen</a>
+            </div>
+            <div class="calendar-embed">
+                <iframe src="https://calendar.google.com/calendar/embed?src=mycalmstudio%40gmail.com&ctz=Europe%2FBerlin" class="calendar-frame"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="modal-winsener" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Harburg – Winsener Straße 16</h2>
+            <p><strong id="modal-address">Adresse:</strong> Winsener Straße 16, 21077 Hamburg</p>
+            <p><strong id="modal-phone">Telefon:</strong> <a href="tel:+49407634377">040 / 7 63 43 77</a>, <a href="tel:+494076114982">040 / 761 14 98 2</a></p>
+            <p><strong id="modal-hours">Öffnungszeiten:</strong></p>
+            <ul>
+                <li id="monday-thursday">Montag - Donnerstag: 09:00 - 13:00, 14:00 - 18:00</li>
+                <li id="friday-hours">Freitag: 10:00 - 14:30</li>
+                <li id="weekend-hours">Samstag: Geschlossen<br>Sonntag: Geschlossen</li>
+            </ul>
+            <div class="modal-images">
+                <img src="Holst_Winsener1.jpg" alt="Fahrschule Winsener Straße 1">
+                <img src="Holst_Winsener2.jpg" alt="Fahrschule Winsener Straße 2">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-hanhoopsfeld" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Harburg – Hanhoopsfeld 18</h2>
+            <p><strong id="modal-address">Adresse:</strong> Hanhoopsfeld 18, 21079 Hamburg</p>
+            <p><strong id="modal-phone">Telefon:</strong> <a href="tel:+49407631121">040 / 763 11 21</a>, <a href="tel:+494076117651">040 / 761 17 651</a></p>
+            <p><strong id="modal-hours">Öffnungszeiten:</strong></p>
+            <ul>
+                <li id="monday-thursday">Montag - Donnerstag: 09:00 - 13:00, 14:00 - 18:00</li>
+                <li id="friday-hours">Freitag: 10:00 - 14:30</li>
+                <li id="weekend-hours">Samstag: Geschlossen<br>Sonntag: Geschlossen</li>
+            </ul>
+            <div class="modal-images">
+                <img src="Holst_Hanhoopsfeld.jpg" alt="Fahrschule Hanhoopsfeld 1">
+                <img src="Holst_Hanhoopsfeld2.jpg" alt="Fahrschule Hanhoopsfeld 2">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-meckelfeld" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Meckelfeld – Mattenmoorstr. 17</h2>
+            <p><strong id="modal-address">Adresse:</strong> Mattenmoorstr. 17, 21217 Seevetal</p>
+            <p><strong id="modal-phone">Telefon:</strong> <a href="tel:+49407688180">040 / 7 68 81 80</a>, <a href="tel:+494076116376">040 / 761 16 376</a></p>
+            <p><strong id="modal-hours">Öffnungszeiten:</strong></p>
+            <ul>
+                <li id="monday-thursday">Montag - Donnerstag: 09:00 - 13:00, 14:00 - 18:00</li>
+                <li id="friday-hours">Freitag: 10:00 - 14:30</li>
+                <li id="weekend-hours">Samstag: Geschlossen<br>Sonntag: Geschlossen</li>
+            </ul>
+            <div class="modal-images">
+                <img src="Holst_meckelfeld1.jpg" alt="Fahrschule Meckelfeld 1">
+                <img src="Holst_meckelfeld2.jpg" alt="Fahrschule Meckelfeld 2">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-hittfeld" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Hittfeld – Hittfelder Schulstr. 15</h2>
+            <p><strong id="modal-address">Adresse:</strong> Hittfelder Schulstr. 15, 21218 Seevetal</p>
+            <p><strong id="modal-phone">Telefon:</strong> <a href="tel:+494105570643">04105 / 57 06 43</a>, <a href="tel:+494105570644">04105 / 57 06 44</a></p>
+            <p><strong id="modal-hours">Öffnungszeiten:</strong></p>
+            <ul>
+                <li id="monday-thursday">Montag - Donnerstag: 09:00 - 13:00, 14:00 - 18:00</li>
+                <li id="friday-hours">Freitag: 10:00 - 14:30</li>
+                <li id="weekend-hours">Samstag: Geschlossen<br>Sonntag: Geschlossen</li>
+            </ul>
+            <div class="modal-images">
+                <img src="Holst_hittfeld1.jpg" alt="Fahrschule Hittfeld 1">
+                <img src="Holst_hittfeld2.jpg" alt="Fahrschule Hittfeld 2">
+            </div>
+        </div>
+    </div>
+
+    <section id="resources" class="container resources-section">
+        <h2 class="section-title" id="resources-title">Nützliche Ressourcen</h2>
+        <div class="resources-grid">
+            <article class="resource-card">
+                <h3 id="resource-lbv-title">🏛️ Landesbetrieb Verkehr (LBV)</h3>
+                <p id="resource-lbv-text">Hier finden Sie alle wichtigen Informationen, Services und Online-Dienste rund um die Themen Fahrzeug-Zulassung und -Abmeldung, Führerschein und Parken in Hamburg.</p>
+                <a href="https://www.hamburg.de/verkehr/lbv" target="_blank" rel="noopener" class="resource-link" id="resource-lbv-link">Zur LBV-Website</a>
+            </article>
+            <article class="resource-card">
+                <h3 id="resource-lbv-terms-title">📅 Termine buchen</h3>
+                <p id="resource-lbv-terms-text">Buchen Sie direkt Ihren Termin zur Führerscheinprüfung oder für die Fahrzeug-Zulassung im LBV Termin-System.</p>
+                <a href="https://www.lbv-termine.de/frontend/index.php" target="_blank" rel="noopener" class="resource-link" id="resource-lbv-terms-link">Termin vereinbaren</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="professional-training" class="container professional-training-section">
+        <h2 class="section-title" id="professional-training-title">Berufskraftfahrer Weiterbildung</h2>
+        <p class="section-subtitle" id="professional-training-subtitle">Spezialisierte Schulungen für professionelle Fahrer</p>
+        
+        <div class="training-tabs">
+            <button class="training-tab-btn active" data-tab="individual" id="training-tab-individual">Einzelseminar</button>
+            <button class="training-tab-btn" data-tab="weekly" id="training-tab-weekly">Wochenseminar</button>
+            <button class="training-tab-btn" data-tab="accelerated" id="training-tab-accelerated">Beschleunigte Grundqualifikation</button>
+        </div>
+
+        <div class="training-content">
+            <div id="individual" class="training-tab active">
+                <div class="training-card">
+                    <h3 id="training-card-individual-title">📋 Einzelseminar</h3>
+                    <p id="training-card-individual-text">Flexibles Einzeltraining für Berufskraftfahrer. Termine nach Vereinbarung – gestalten Sie die Schulung nach Ihren Anforderungen.</p>
+                    <a href="https://www.fahrschule-holst.de/wp-content/uploads/2018/03/Anmeldeformular.pdf" target="_blank" rel="noopener" class="training-link">Anmeldeformular PDF</a>
+                </div>
+            </div>
+
+            <div id="weekly" class="training-tab">
+                <div class="training-card">
+                    <h3 id="training-card-weekly-title">📅 Wochenseminar</h3>
+                    <p id="training-card-weekly-text">Intensive Schulungen über mehrere Tage. Wir gestalten das Seminar individuell mit Ihnen – Beratung und Planung nach Ihren Bedürfnissen.</p>
+                    <a href="mailto:mycalmstudio@gmail.com" class="training-link">Beratung anfragen</a>
+                </div>
+            </div>
+
+            <div id="accelerated" class="training-tab">
+                <div class="training-card">
+                    <h3 id="training-card-accelerated-title">⚡ Beschleunigte Grundqualifikation</h3>
+                    <p id="training-card-accelerated-text">Kompakte Grundqualifikation für Berufskraftfahrer. Effiziente Schulung mit umfassender Vorbereitung auf die praktische Prüfung.</p>
+                    <a href="https://www.fahrschule-holst.de/wp-content/uploads/2018/03/Anmeldeformular.pdf" target="_blank" rel="noopener" class="training-link">Anmeldeformular PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="handicap" class="container handicap-section">
+        <h2 class="section-title" id="handicap-title">♿ Menschen mit Behinderungen</h2>
+        <p class="section-subtitle" id="handicap-subtitle">Spezialisierte Ausbildung seit 2007</p>
+        
+        <div class="handicap-content">
+            <div class="handicap-card">
+                <h3 id="handicap-card-exp-title">🏆 Erfahrung</h3>
+                <p id="handicap-card-exp-text">Seit 2007 bilden wir Menschen mit Behinderungen aus. Unsere Fahrlehrerinnen und Fahrlehrer sind speziell fortgebildet und verfügen über jahrelange Erfahrung in der Handicap-Ausbildung.</p>
+            </div>
+            <div class="handicap-card">
+                <h3 id="handicap-card-barrier-title">🚪 Barrierefreiheit</h3>
+                <p id="handicap-card-barrier-text">Alle unsere Fahrschulen sind barrierefrei zu erreichen. Bushaltestellen befinden sich in unmittelbarer Umgebung. Der theoretische Unterricht wird integrativ mit behinderten und nichtbehinderten Fahrschülern durchgeführt.</p>
+            </div>
+            <div class="handicap-card">
+                <h3 id="handicap-card-expert-title">📋 Fachgutachten</h3>
+                <p id="handicap-card-expert-text">Wir erstellen Fahrproben und Gutachten zur Beurteilung der Fahrtauglichkeit. Unsere Experten helfen Ihnen und Ihrem Facharzt bei der Entscheidungsfindung.</p>
+            </div>
+            <div class="handicap-card">
+                <h3 id="handicap-card-support-title">💰 Förderung</h3>
+                <p id="handicap-card-support-text">Wir unterstützen Sie bei der beruflichen Rehabilitation durch die Deutsche Rentenversicherung. Beratung und individuelle Lösungen für Ihre Situation.</p>
+            </div>
+        </div>
+        
+        <div class="handicap-cta">
+            <p id="handicap-cta-text">Haben Sie Fragen oder möchten Sie sich beraten lassen?</p>
+            <a href="#contact" class="btn-primary" id="handicap-cta-button">Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <section id="team" class="container team-section">
+        <h2 class="section-title" id="team-title">Unser Team</h2>
+        <p class="section-subtitle" id="team-subtitle">Lernen Sie unser engagiertes Team kennen</p>
+        
+        <div class="team-tabs">
+            <button class="team-tab-btn active" data-tab="buro" id="team-tab-office">Bürokräfte</button>
+            <button class="team-tab-btn" data-tab="fahrlehrer" id="team-tab-instructors">Fahrlehrer</button>
+            <button class="team-tab-btn" data-tab="rentner" id="team-tab-retired">Die Rentner</button>
+        </div>
+
+        <div class="team-content">
+            <div id="buro" class="team-tab active">
+                <div class="team-grid">
+                    <div class="team-member" data-member="christiane-holst">
+                        <img src="christiane_holst.jpg" alt="Christiane Holst">
+                        <h3>Christiane Holst</h3>
+                        <p>Betriebsmanagerin KMU</p>
+                    </div>
+                    <div class="team-member" data-member="marina-lossmann">
+                        <img src="marina_lossmann.jpg" alt="Marina Lossmann">
+                        <h3>Marina Lossmann</h3>
+                        <p>Assistentin der Geschäftsleitung</p>
+                    </div>
+                    <div class="team-member" data-member="britta-stein">
+                        <img src="britta_stein.jpg" alt="Britta Stein">
+                        <h3>Britta Stein</h3>
+                        <p>Betriebsmanagerin KMU</p>
+                    </div>
+                    <div class="team-member" data-member="melanie-sievers">
+                        <img src="melanie_sievers.jpg" alt="Melanie Sievers">
+                        <h3>Melanie Sievers</h3>
+                        <p>Büroassistentin</p>
+                    </div>
+                    <div class="team-member" data-member="dangela-niemann">
+                        <img src="dangela_niemann.jpg" alt="Dangela Niemann">
+                        <h3>Dangela Niemann</h3>
+                        <p>Büroassistentin</p>
+                    </div>
+                    <div class="team-member" data-member="poschel-lavdrime">
+                        <img src="poeschel_lavdrime.jpg" alt="Pöschel Lavdrime">
+                        <h3>Pöschel Lavdrime</h3>
+                        <p>Büroassistentin</p>
+                    </div>
+                    <div class="team-member" data-member="maik-kitzuhn">
+                        <img src="maik_kitzuhn.jpg" alt="Maik Kitzuhn">
+                        <h3>Maik Kitzuhn</h3>
+                        <p>Büroassistent</p>
+                    </div>
+                    <div class="team-member" data-member="anita-agac">
+                        <img src="anita_agac.jpg" alt="Anita Agac">
+                        <h3>Anita Agac</h3>
+                        <p>Büroassistentin</p>
+                    </div>
+                    <div class="team-member" data-member="heike-schroder">
+                        <img src="heike_schroder.jpg" alt="Heike Schröder">
+                        <h3>Heike Schröder</h3>
+                        <p>Büroassistentin</p>
+                    </div>
+                    <div class="team-member" data-member="helena-huber">
+                        <img src="helena_huber.jpg" alt="Helena Huber">
+                        <h3>Helena Huber</h3>
+                        <p>Büroassistentin</p>
+                    </div>
+                    <div class="team-member" data-member="gultekin-emirhan">
+                        <img src="gultekin_emirhan.jpg" alt="Gültekin Emirhan">
+                        <h3>Gültekin Emirhan</h3>
+                        <p>Auszubildender</p>
+                    </div>
+                </div>
+                <div class="team-needed">
+                    <p><strong>Fahrschullehrer und Mitarbeiter gesucht!</strong></p>
+                    <p>Wir würden uns freuen, Sie in unserem Team willkommen zu heißen. Kontaktieren Sie uns</p>
+                    <p>040 / 763 43 77<br>0176 / 23 30 88 64</p>
+                </div>
+            </div>
+
+            <div id="fahrlehrer" class="team-tab">
+                <div class="team-grid">
+                    <div class="team-member" data-member="henry-holst">
+                        <img src="henry_holst.jpg" alt="Henry Holst">
+                        <h3>Henry Holst</h3>
+                        <p>Inhaber</p>
+                    </div>
+                    <div class="team-member" data-member="wolfgang-holst">
+                        <img src="wolfgang_holst.jpg" alt="Wolfgang Holst">
+                        <h3>Wolfgang Holst</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="christian-kohnert">
+                        <img src="christian_kohnert.jpg" alt="Christian Kohnert">
+                        <h3>Christian Kohnert</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="gregor-weske">
+                        <img src="gregor_weske.jpg" alt="Gregor Weske">
+                        <h3>Gregor Weske</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="nicole-berthold">
+                        <img src="nicole_berthold.jpg" alt="Nicole Berthold">
+                        <h3>Nicole Berthold</h3>
+                        <p>Fahrlehrerin</p>
+                    </div>
+                    <div class="team-member" data-member="orbis-muller-knauff">
+                        <img src="orbis_muller_knauff.jpg" alt="Orbis Müller-Knauff">
+                        <h3>Orbis Müller-Knauff</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="andre-veenhuis">
+                        <img src="andre_veenhuis.jpg" alt="André Veenhuis">
+                        <h3>André Veenhuis</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="valod-sargsyan">
+                        <img src="valod_sargsyan.jpg" alt="Valod Sargsyan">
+                        <h3>Valod Sargsyan</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="sedat-duran">
+                        <img src="sedat_duran.jpg" alt="Sedat Duran">
+                        <h3>Sedat Duran</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                    <div class="team-member" data-member="grit-meluh">
+                        <img src="grit_meluh.jpg" alt="Grit Melüh">
+                        <h3>Grit Melüh</h3>
+                        <p>Fahrlehrerin</p>
+                    </div>
+                    <div class="team-member" data-member="mohammed-amin-hoshang-hasan">
+                        <img src="mohammed_amin_hoshang_hasan.jpg" alt="Mohammed Amin, Hoshang Hasan">
+                        <h3>Mohammed Amin, Hoshang Hasan</h3>
+                        <p>Fahrlehrer</p>
+                    </div>
+                </div>
+                <div class="team-needed">
+                    <p><strong>Fahrschullehrer und Mitarbeiter gesucht!</strong></p>
+                    <p>Wir würden uns freuen, Sie in unserem Team willkommen zu heißen. Kontaktieren Sie uns</p>
+                    <p>040 / 763 43 77<br>0176 / 23 30 88 64</p>
+                </div>
+            </div>
+
+            <div id="rentner" class="team-tab">
+                <div class="team-grid">
+                    <div class="team-member" data-member="juergen-haak">
+                        <img src="jurgen_haak.jpg" alt="Jürgen Haak">
+                        <h3>Jürgen Haak</h3>
+                        <p>Im Ruhestand seit 1996</p>
+                    </div>
+                    <div class="team-member" data-member="brigitte-nitsch">
+                        <img src="brigitte_nitsch.jpg" alt="Brigitte Nitsch">
+                        <h3>Brigitte Nitsch</h3>
+                        <p>Sekretärin (Ruhestand)</p>
+                    </div>
+                    <div class="team-member" data-member="uwe-jacobsen">
+                        <img src="uwe_jacobsen.jpg" alt="Uwe Jacobsen">
+                        <h3>Uwe Jacobsen</h3>
+                        <p>Fahrlehrer † (1959 - 2013)</p>
+                    </div>
+                </div>
+                <div class="team-needed">
+                    <p><strong>Dankbar für jahrelange Unterstützung</strong></p>
+                    <p>Wir erinnern an unsere ehemaligen Mitglieder, die unsere Fahrschule mit großem Engagement geprägt haben.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Modals -->
+    <div id="modal-christiane-holst" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Christiane Holst</h2>
+            <img src="Christiane_Holst.jpg" alt="Christiane Holst" class="modal-team-img">
+            <p><strong>Rolle:</strong> Betriebsmanagerin KMU</p>
+            <p><strong>Seit:</strong> 01.06.1993</p>
+            <p>Sie bildet unsere Kaufleute für Büromanagement aus. Ist für alle Belange im Betrieb und der Organisation verantwortlich.</p>
+        </div>
+    </div>
+
+    <div id="modal-marina-lossmann" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Marina Lossmann</h2>
+            <img src="Marina_Lossmann.jpg" alt="Marina Lossmann" class="modal-team-img">
+            <p><strong>Rolle:</strong> Assistentin der Geschäftsleitung</p>
+            <p><strong>Seit:</strong> 01.08.2010</p>
+            <p>Sie hat ihre Ausbildung am 01.08.2010 in der Fahrschule Holst als Kauffrau für Bürokommunikation begonnen und mit Erfolg bestanden.</p>
+        </div>
+    </div>
+
+    <div id="modal-britta-stein" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Britta Stein</h2>
+            <img src="Britta_Stein.jpg" alt="Britta Stein" class="modal-team-img">
+            <p><strong>Rolle:</strong> Betriebsmanagerin KMU</p>
+            <p><strong>Seit:</strong> 01.08.2011</p>
+            <p>Sie ist für das Büro in der Winsener Straße 16 zuständig, sowie für die Buchhaltung.</p>
+        </div>
+    </div>
+
+    <div id="modal-melanie-sievers" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Melanie Sievers</h2>
+            <img src="Melanie_Sievers.jpg" alt="Melanie Sievers" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistentin</p>
+            <p><strong>Seit:</strong> 01.03.2023</p>
+            <p>Ist für das Büro in der Hanhoopsfeld 18 zuständig. Sie ist in der Fahrschule Holst als Kauffrau für Bürokommunikation angestellt.</p>
+        </div>
+    </div>
+
+    <div id="modal-dangela-niemann" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Dangela Niemann</h2>
+            <img src="team-dangela-niemann.jpg" alt="Dangela Niemann" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistentin</p>
+            <p><strong>Seit:</strong> 01.08.2011</p>
+            <p>Ist für das Büro in Meckelfeld zuständig.</p>
+        </div>
+    </div>
+
+    <div id="modal-poschel-lavdrime" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pöschel Lavdrime</h2>
+            <img src="Poeschel_Lavdrime.jpg" alt="Pöschel Lavdrime" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistentin</p>
+            <p><strong>Seit:</strong> 19.08.2024</p>
+            <p>Ist für das Büro in Hittfeld zuständig.</p>
+        </div>
+    </div>
+
+    <div id="modal-maik-kitzuhn" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Maik Kitzuhn</h2>
+            <img src="MAIK_KITZUHN.jpg" alt="Maik Kitzuhn" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistent</p>
+            <p><strong>Seit:</strong> 01.04.2023</p>
+            <p>Ist für das Büro in Meckelfeld zuständig.</p>
+        </div>
+    </div>
+
+    <div id="modal-anita-agac" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Anita Agac</h2>
+            <img src="Anita_Agac.jpg" alt="Anita Agac" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistentin</p>
+            <p><strong>Seit:</strong> 01.02.2020</p>
+            <p>Ist für das Büro in der Winsener Straße 16 zuständig.</p>
+        </div>
+    </div>
+
+    <div id="modal-heike-schroder" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Heike Schröder</h2>
+            <img src="Heike_Schroder.jpg" alt="Heike Schröder" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistentin</p>
+            <p><strong>Seit:</strong> 01.05.2023</p>
+            <p>Ist für das Büro in Hittfeld zuständig.</p>
+        </div>
+    </div>
+
+    <div id="modal-helena-huber" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Helena Huber</h2>
+            <img src="Helena_Huber.jpg" alt="Helena Huber" class="modal-team-img">
+            <p><strong>Rolle:</strong> Büroassistentin</p>
+            <p><strong>Seit:</strong> 01.08.2025</p>
+            <p>Ist für das Büro in der Winsener Straße 16 zuständig.</p>
+        </div>
+    </div>
+
+    <div id="modal-gultekin-emirhan" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Gültekin Emirhan</h2>
+            <img src="Gultekin_Emirhan.jpg" alt="Gültekin Emirhan" class="modal-team-img">
+            <p><strong>Rolle:</strong> Auszubildender</p>
+            <p><strong>Seit:</strong> 01.08.2022</p>
+            <p>Ist in der Ausbildung zum Kaufmann für Büromanagement.</p>
+        </div>
+    </div>
+
+    <div id="modal-henry-holst" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Henry Holst</h2>
+            <img src="Henry_Holst.jpg" alt="Henry Holst" class="modal-team-img">
+            <p><strong>Rolle:</strong> Inhaber</p>
+            <p><strong>Fahrlehrer seit:</strong> 18.12.1988</p>
+            <p>Bildet in Harburg aus. Fahrlehrer aller Klassen. Seminarleiter ASF, Seminarleiter FES, Ausbildungsfahrlehrer, Ausbilder für Flurförderfahrzeuge, Ausbilder für Ladungssicherung nach VDI 2700a, Weiterbildungen für Menschen mit Behinderungen. Qualifikationen: Industrie-Meister Fachrichtung Kraftverkehr, Berufskraftfahrer Güterverkehr, Kfz Mechaniker.</p>
+        </div>
+    </div>
+
+    <div id="modal-wolfgang-holst" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Wolfgang Holst</h2>
+            <img src="Wolfgang_Holst.jpg" alt="Wolfgang Holst" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Fahrlehrer seit:</strong> 27.03.1992</p>
+            <p><strong>Seit:</strong> 27.03.1996</p>
+            <p>Bildet in Hittfeld aus. Fahrlehrer aller Klassen. Seminarleiter ASF, Seminarleiter FES, Ausbildungsfahrlehrer, Ausbilder für Flurförderfahrzeuge, Ausbilder für Ladungssicherung nach VDI 2700a.</p>
+        </div>
+    </div>
+
+    <div id="modal-christian-kohnert" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Christian Kohnert</h2>
+            <img src="Christian_Kohnert.jpg" alt="Christian Kohnert" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Fahrlehrer seit:</strong> 09.08.2021</p>
+            <p><strong>Seit:</strong> 10.08.2021</p>
+            <p>Bildet in Meckelfeld & Hittfeld aus. Fahrlehrer der Klassen B & BE. Qualifikationen: Kaufmann.</p>
+        </div>
+    </div>
+
+    <div id="modal-gregor-weske" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Gregor Weske</h2>
+            <img src="Gregor_Weske.jpg" alt="Gregor Weske" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Fahrlehrer seit:</strong> 26.08.2024</p>
+            <p><strong>Seit:</strong> 28.01.2024</p>
+            <p>Bildet in Hittfeld aus. Fahrlehrer der Klassen B & BE. Qualifikationen: Kfz-Mechaniker Nutzkraftfahrzeuge.</p>
+        </div>
+    </div>
+
+    <div id="modal-nicole-berthold" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nicole Berthold</h2>
+            <img src="Nicole_Berthold.jpg" alt="Nicole Berthold" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrerin</p>
+            <p><strong>Fahrlehrerin seit:</strong> 2023</p>
+            <p><strong>Seit:</strong> 01.08.2022</p>
+            <p>Bildet in Harburg aus. Fahrlehrer der Klassen B & BE.</p>
+        </div>
+    </div>
+
+    <div id="modal-orbis-muller-knauff" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Orbis Müller-Knauff</h2>
+            <img src="Orbis_Muller_Knauff.jpg" alt="Orbis Müller-Knauff" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Fahrlehrer seit:</strong> 19.06.2017</p>
+            <p><strong>Seit:</strong> 01.03.2018</p>
+            <p>Bildet in Harburg & Hittfeld aus. Fahrlehrer der Klassen A, B, BE.</p>
+        </div>
+    </div>
+
+    <div id="modal-andre-veenhuis" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>André Veenhuis</h2>
+            <img src="Andre_Veenhuis.jpg" alt="André Veenhuis" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Seit:</strong> 17.10.2024</p>
+            <p>Ist in der Fahrschule Holst zum Fahrlehrer ausgebildet worden. Fahrlehrer der Klassen B & BE. Qualifikationen: Musik Lehrer.</p>
+        </div>
+    </div>
+
+    <div id="modal-valod-sargsyan" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Valod Sargsyan</h2>
+            <img src="Valod_Sargsyan.jpg" alt="Valod Sargsyan" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Seit:</strong> 24.07.2023</p>
+            <p>Bildet in Meckelfeld & Hittfeld aus. Fahrlehrer der Klassen B & BE.</p>
+        </div>
+    </div>
+
+    <div id="modal-sedat-duran" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sedat Duran</h2>
+            <img src="Sedat_Duran.jpg" alt="Sedat Duran" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Seit:</strong> 22.10.2025</p>
+            <p>Wird in der Fahrschule Holst zum Fahrlehrer ausgebildet. Fahrlehrer der Klassen B & BE.</p>
+        </div>
+    </div>
+
+    <div id="modal-grit-meluh" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Grit Melüh</h2>
+            <img src="Grit_meluh.jpg" alt="Grit Melüh" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrerin</p>
+            <p><strong>Fahrlehrerin seit:</strong> 23.11.2020</p>
+            <p><strong>Seit:</strong> 05.05.2025</p>
+            <p>Bildet in Hittfeld & Harburg aus. Ihre Empathie liegt im wesentlichen in der Ausbildung für Menschen mit Handicap. Fahrlehrerin der Klassen B & BE.</p>
+        </div>
+    </div>
+
+    <div id="modal-mohammed-amin-hoshang-hasan" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Mohammed Amin, Hoshang Hasan</h2>
+            <img src="Mohammed_Amin_Hoshang_Hasan.jpg" alt="Mohammed Amin, Hoshang Hasan" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Seit:</strong> 16.03.2026</p>
+            <p>Bildet in Hittfeld aus. Wird in der Fahrschule Holst zum Fahrlehrer ausgebildet. Fahrlehrer der Klassen B & BE.</p>
+        </div>
+    </div>
+
+    <div id="modal-juergen-haak" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Jürgen Haak</h2>
+            <img src="Jurgen_Haak.jpg" alt="Jürgen Haak" class="modal-team-img">
+            <p><strong>Rolle:</strong> Gründer & Fahrlehrer (Ruhestand)</p>
+            <p><strong>Im Ruhestand seit:</strong> 1996</p>
+            <p>Jürgen Haak hat die Fahrschule Holst gegründet und prägte sie viele Jahre mit seinem Engagement. Er hat sich 1996 in den wohlverdienten Ruhestand verabschiedet.</p>
+        </div>
+    </div>
+
+    <div id="modal-brigitte-nitsch" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Brigitte Nitsch</h2>
+            <img src="Brigitte_Nitsch.jpg" alt="Brigitte Nitsch" class="modal-team-img">
+            <p><strong>Rolle:</strong> Sekretärin (Ruhestand)</p>
+            <p><strong>Eingestellt am:</strong> 26.07.1978</p>
+            <p>Frau Nitsch wurde von Jürgen Haak als Sekretärin in der Mensingstraße 26 eingestellt. Mit dem Kauf der Fahrschule Haak wurde sie in die Fahrschule Holst übernommen, wo sie bis zur Rente ihrer Arbeit dankenswert verrichtete.</p>
+        </div>
+    </div>
+
+    <div id="modal-uwe-jacobsen" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Uwe Jacobsen (†)</h2>
+            <img src="Uwe_Jacobsen.jpg" alt="Uwe Jacobsen" class="modal-team-img">
+            <p><strong>Rolle:</strong> Fahrlehrer</p>
+            <p><strong>Fahrlehrer seit:</strong> 1959</p>
+            <p><strong>† 2013</strong></p>
+            <p>Uwe Jacobsen war ein erfahrener Fahrlehrer der Klasse B und hat sich in unseren Herzen eine bleibende Erinnerung hinterlassen. Seine Fachkompetenz und Leidenschaft für seinen Beruf werden uns immer in Erinnerung bleiben.</p>
+        </div>
+    </div>
+
+    <section id="partners" class="container partners-section">
+        <h2 class="section-title" id="partners-title">Unsere Partner</h2>
+        <div class="partners-grid">
+            <a href="https://www.mobilcentrum-loennies.de/" target="_blank" rel="noopener" class="partner-link">
+                <img src="mobilcentrum_loennies_logo.png" alt="Mobil Centrum Lönnies">
+            </a>
+            <a href="https://www.bvf.de/" target="_blank" rel="noopener" class="partner-link">
+                <img src="BVF_logo.png" alt="BVF">
+            </a>
+            <a href="https://www.hamburg.de/lbv" target="_blank" rel="noopener" class="partner-link">
+                <img src="lbv_logo.jpg" alt="LBV Hamburg">
+            </a>
+            <a href="https://www.team-wahlers.de/" target="_blank" rel="noopener" class="partner-link">
+                <img src="wahlers_logo.png" alt="Wählers">
+            </a>
+            <a href="https://www.tuev-nord.de/" target="_blank" rel="noopener" class="partner-link">
+                <img src="TUVNord_logo.png" alt="TÜV Nord">
+            </a>
+            <a href="https://thomsen-meckelfeld.seat.de//" target="_blank" rel="noopener" class="partner-link">
+                <img src="thomsen_logo.png" alt="Thomsen">
+            </a>
+            <a href="https://www.fahrlehrerverband-hamburg.de//" target="_blank" rel="noopener" class="partner-link">
+                <img src="Fahrlehrerverband_hamburg_logo.png" alt="Fahrlehrerverband Hamburg">
+            </a>
+             <a href="https://www.flv-nds.de//" target="_blank" rel="noopener" class="partner-link">
+                <img src="Fahrlehrerverband_niedersachsen_logo.jpg" alt="Fahrlehrerverband Niedersachsen">
+            </a>
+        </div>
+    </section>
+
+    <div class="footer-rating">
+        <a href="https://www.werkenntdenbesten.de/e/52848305/fahrschule/seevetal/fahrschule-holst-bewertungen.html"
+           target="_blank"
+           rel="noopener"
+           aria-label="Bewertungen auf Wer kennt den Besten">
+            <img src="werkenntdenbesten-logo.png" alt="Wer kennt den Besten Bewertungen" class="review-logo-footer">
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Fahrschule Holst Hamburg</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span class="social-icon">f</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <span class="social-icon">𝕏</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span class="social-icon">📷</span>
+                </a>
+            </div>
+            <div class="legal-links">
+                <a href="impressum.html" id="footer-impressum">Impressum</a> | 
+                <a href="datenschutz.html" id="footer-datenschutz">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navDropdown = document.querySelector('.nav-item.dropdown');
+        const navMoreButton = document.getElementById('nav-more');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                navDropdown?.classList.remove('open');
+                navMoreButton?.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        navMoreButton?.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const isOpen = navDropdown.classList.toggle('open');
+            navMoreButton.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        // Close menu or dropdown when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.navbar-container')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+            if (!event.target.closest('.nav-item.dropdown')) {
+                navDropdown?.classList.remove('open');
+                navMoreButton?.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        const translations = {
+            de: {
+                navPrice: 'Preise',
+                navContact: 'Kontakt',
+                navMore: 'Mehr',
+                navBooking: 'Termin buchen',
+                navLicense: 'Führerscheininfo',
+                navLocations: 'Standorte',
+                navResources: 'Ressourcen',
+                navTraining: 'Weiterbildung',
+                navHandicap: 'Handicap',
+                navTeam: 'Team',
+                navPartners: 'Partner',
+                slideshowTitle: 'Bilder unserer Fahrschulen',
+                onlineRegistrationCta: 'Online Anmeldung',
+                heroTitle: 'Dein Führerschein in <br><span class="highlight">Hamburg.</span>',
+                heroText: 'Sicher, modern und ohne Stress zum Ziel. Jetzt Termin für die erste Fahrstunde sichern.',
+                heroCta: 'Jetzt starten',
+                heroPrices: 'Preise ansehen',
+                heroBook: 'Termin buchen',
+                bookingTitle: 'Termin online buchen',
+                bookingText: 'Wähle deinen Termin aus dem Kalender oder rufe uns direkt an für sofortige Hilfe.',
+                bookingButton: 'Google Kalender',
+                bookingPhone: 'Per Telefon buchen',
+                bookingEmail: 'Per E-Mail buchen',
+                pricesTitle: 'Transparente Preise',
+                contactHeading: 'Bereit für die Straße?',
+                contactText: 'Schreib uns eine Nachricht oder komm direkt in der Fahrschule vorbei.',
+                contactCta: 'Anfrage senden',
+                locationsTitle: 'Unsere Standorte',
+                resourcesTitle: 'Nützliche Ressourcen',
+                professionalTrainingTitle: 'Berufskraftfahrer Weiterbildung',
+                handicapTitle: '♿ Menschen mit Behinderungen',
+                teamTitle: 'Unser Team',
+                partnersTitle: 'Unsere Partner',
+                priceClassB: 'Klasse B',
+                priceClassB197: 'B197 (Automatik)',
+                priceFeeB: 'Grundgebühr: 290€',
+                priceFeeB197: 'Grundgebühr: 250€',
+                priceFeatureB1: 'Theoretischer Unterricht',
+                priceFeatureB2: 'Moderne Schulungsfahrzeuge',
+                priceFeatureB3: 'Inkl. Lern-App',
+                priceFeatureB1971: 'Mix aus Schaltung & Automatik',
+                priceFeatureB1972: 'Keine Prüfungsangst',
+                priceFeatureB1973: 'Zukunftssicher fahren',
+                bookingSlotMondoThurs: 'Mo - Do',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'Freitag',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'Online',
+                bookingOptionOnline: 'Termin per Kalender',
+                bookingSlotPhone: 'Telefon',
+                bookingPhoneNumber: '040 / 7 63 43 77',
+                resourceLbvTitle: '🏛️ Landesbetrieb Verkehr (LBV)',
+                resourceLbvText: 'Hier finden Sie alle wichtigen Informationen, Services und Online-Dienste rund um die Themen Fahrzeug-Zulassung und -Abmeldung, Führerschein und Parken in Hamburg.',
+                resourceLbvLink: 'Zur LBV-Website',
+                resourceLbvTermsTitle: '📅 Termine buchen',
+                resourceLbvTermsText: 'Buchen Sie direkt Ihren Termin zur Führerscheinprüfung oder für die Fahrzeug-Zulassung im LBV Termin-System.',
+                resourceLbvTermsLink: 'Termin vereinbaren',
+                trainingTabIndividual: 'Einzelseminar',
+                trainingTabWeekly: 'Wochenseminar',
+                trainingTabAccelerated: 'Beschleunigte Grundqualifikation',
+                trainingCardIndividualTitle: '📋 Einzelseminar',
+                trainingCardIndividualText: 'Flexibles Einzeltraining für Berufskraftfahrer. Termine nach Vereinbarung – gestalten Sie die Schulung nach Ihren Anforderungen.',
+                trainingCardWeeklyTitle: '📅 Wochenseminar',
+                trainingCardWeeklyText: 'Intensive Schulungen über mehrere Tage. Wir gestalten das Seminar individuell mit Ihnen – Beratung und Planung nach Ihren Bedürfnissen.',
+                trainingCardAcceleratedTitle: '⚡ Beschleunigte Grundqualifikation',
+                trainingCardAcceleratedText: 'Kompakte Grundqualifikation für Berufskraftfahrer. Effiziente Schulung mit umfassender Vorbereitung auf die praktische Prüfung.',
+                handicapCardExpTitle: '🏆 Erfahrung',
+                handicapCardExpText: 'Seit 2007 bilden wir Menschen mit Behinderungen aus. Unsere Fahrlehrerinnen und Fahrlehrer sind speziell fortgebildet und verfügen über jahrelange Erfahrung in der Handicap-Ausbildung.',
+                handicapCardBarrierTitle: '🚪 Barrierefreiheit',
+                handicapCardBarrierText: 'Alle unsere Fahrschulen sind barrierefrei zu erreichen. Bushaltestellen befinden sich in unmittelbarer Umgebung. Der theoretische Unterricht wird integrativ mit behinderten und nichtbehinderten Fahrschülern durchgeführt.',
+                handicapCardExpertTitle: '📋 Fachgutachten',
+                handicapCardExpertText: 'Wir erstellen Fahrproben und Gutachten zur Beurteilung der Fahrtauglichkeit. Unsere Experten helfen Ihnen und Ihrem Facharzt bei der Entscheidungsfindung.',
+                handicapCardSupportTitle: '💰 Förderung',
+                handicapCardSupportText: 'Wir unterstützen Sie bei der beruflichen Rehabilitation durch die Deutsche Rentenversicherung. Beratung und individuelle Lösungen für Ihre Situation.',
+                handicapCtaText: 'Haben Sie Fragen oder möchten Sie sich beraten lassen?',
+                handicapCtaButton: 'Kontakt aufnehmen',
+                teamTabOffice: 'Bürokräfte',
+                teamTabInstructors: 'Fahrlehrer',
+                teamTabRetired: 'Die Rentner',
+                teamSubtitle: 'Lernen Sie unser engagiertes Team kennen',
+                teamNeededTitle: 'Fahrschullehrer und Mitarbeiter gesucht!',
+                teamNeededText: 'Wir würden uns freuen, Sie in unserem Team willkommen zu heißen. Kontaktieren Sie uns',
+                footerImpressum: 'Impressum',
+                footerDatenschutz: 'Datenschutz'
+            },
+            en: {
+                navPrice: 'Prices',
+                navContact: 'Contact',
+                navMore: 'More',
+                navBooking: 'Book appointment',
+                navLicense: 'License info',
+                navResources: 'Useful Resources',
+                navTraining: 'Professional Training',
+                navHandicap: 'Accessibility',
+                navTeam: 'Team',
+                navPartners: 'Partners',
+                slideshowTitle: 'Photos of our driving schools',
+                onlineRegistrationCta: 'Online registration',
+                heroTitle: 'Your driver’s license in <br><span class="highlight">Hamburg.</span>',
+                heroText: 'Safe, modern and stress-free to the goal. Book your first lesson now.',
+                heroCta: 'Start now',
+                heroPrices: 'View prices',
+                heroBook: 'Book appointment',
+                bookingTitle: 'Book appointment online',
+                bookingText: 'Choose your slot from the calendar or contact us directly for immediate help.',
+                bookingButton: 'Google Calendar',
+                bookingPhone: 'Book by phone',
+                bookingEmail: 'Book by email',
+                pricesTitle: 'Transparent pricing',
+                contactHeading: 'Ready for the road?',
+                contactText: 'Send us a message or visit the driving school in person.',
+                contactCta: 'Send request',
+                locationsTitle: 'Our locations',
+                resourcesTitle: 'Useful Resources',
+                professionalTrainingTitle: 'Professional Driver Training',
+                handicapTitle: '♿ People with Disabilities',
+                modalAddress: 'Address:',
+                modalPhone: 'Phone:',
+                modalHours: 'Opening Hours:',
+                mondayThursday: 'Monday - Thursday: 09:00 - 13:00, 14:00 - 18:00',
+                friday: 'Friday: 10:00 - 14:30',
+                weekend: 'Saturday: Closed<br>Sunday: Closed',
+                teamTitle: 'Our Team',
+                partnersTitle: 'Our Partners',
+                priceClassB: 'Class B',
+                priceClassB197: 'B197 (Automatic)',
+                priceFeeB: 'Base fee: 290€',
+                priceFeeB197: 'Base fee: 250€',
+                priceFeatureB1: 'Theoretical instruction',
+                priceFeatureB2: 'Modern training vehicles',
+                priceFeatureB3: 'Incl. learning app',
+                priceFeatureB1971: 'Mix of manual & automatic',
+                priceFeatureB1972: 'No test anxiety',
+                priceFeatureB1973: 'Future-proof driving',
+                bookingSlotMondoThurs: 'Mon - Thu',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'Friday',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'Online',
+                bookingOptionOnline: 'Book via calendar',
+                bookingSlotPhone: 'Phone',
+                bookingPhoneNumber: '+49 40 7 63 43 77',
+                resourceLbvTitle: '🏛️ State Transport Authority (LBV)',
+                resourceLbvText: 'Find all important information, services and online services about vehicle registration and deregistration, drivers license and parking in Hamburg.',
+                resourceLbvLink: 'To LBV website',
+                resourceLbvTermsTitle: '📅 Book appointments',
+                resourceLbvTermsText: 'Book your appointment for the drivers test or vehicle registration directly in the LBV appointment system.',
+                resourceLbvTermsLink: 'Schedule appointment',
+                trainingTabIndividual: 'Individual seminar',
+                trainingTabWeekly: 'Weekly seminar',
+                trainingTabAccelerated: 'Accelerated basic qualification',
+                trainingCardIndividualTitle: '📋 Individual seminar',
+                trainingCardIndividualText: 'Flexible individual training for professional drivers. Appointments by arrangement – design the training according to your requirements.',
+                trainingCardWeeklyTitle: '📅 Weekly seminar',
+                trainingCardWeeklyText: 'Intensive training over several days. We design the seminar individually with you – advice and planning according to your needs.',
+                trainingCardAcceleratedTitle: '⚡ Accelerated basic qualification',
+                trainingCardAcceleratedText: 'Compact basic qualification for professional drivers. Efficient training with comprehensive preparation for the practical exam.',
+                handicapCardExpTitle: '🏆 Experience',
+                handicapCardExpText: 'Since 2007 we have trained people with disabilities. Our driving instructors are specially trained and have many years of experience in disability training.',
+                handicapCardBarrierTitle: '🚪 Accessibility',
+                handicapCardBarrierText: 'All our driving schools are easily accessible. Bus stops are in the immediate vicinity. Theoretical instruction is conducted jointly with disabled and non-disabled students.',
+                handicapCardExpertTitle: '📋 Expert assessments',
+                handicapCardExpertText: 'We prepare driving tests and assessments to evaluate driving ability. Our experts help you and your doctor make decisions.',
+                handicapCardSupportTitle: '💰 Support',
+                handicapCardSupportText: 'We support you in vocational rehabilitation through the German statutory pension insurance. Advice and individual solutions for your situation.',
+                handicapCtaText: 'Do you have questions or would like advice?',
+                handicapCtaButton: 'Contact us',
+                teamTabOffice: 'Office staff',
+                teamTabInstructors: 'Instructors',
+                teamTabRetired: 'Retirees',
+                teamSubtitle: 'Learn about our dedicated team',
+                teamNeededTitle: 'Driving Instructors and Staff Wanted!',
+                teamNeededText: 'We would be happy to welcome you to our team. Contact us',
+                footerImpressum: 'Legal notice',
+                footerDatenschutz: 'Privacy policy'
+            },
+            ru: {
+                navPrice: 'Цены',
+                navContact: 'Контакт',
+                navMore: 'Ещё',
+                navBooking: 'Записаться',
+                navLicense: 'Информация о правах',
+                navResources: 'Ресурсы',
+                navTraining: 'Профессиональное обучение',
+                navHandicap: 'Доступность',
+                navTeam: 'Команда',
+                navPartners: 'Партнеры',
+                slideshowTitle: 'Фотографии наших автошкол',
+                onlineRegistrationCta: 'Онлайн регистрация',
+                heroTitle: 'Ваши водительские права в <br><span class="highlight">Гамбурге.</span>',
+                heroText: 'Безопасно, современно и без стресса к цели. Забронируйте первый урок сейчас.',
+                heroCta: 'Начать сейчас',
+                heroPrices: 'Посмотреть цены',
+                heroBook: 'Записаться на прием',
+                bookingTitle: 'Записаться онлайн',
+                bookingText: 'Выберите время в календаре или свяжитесь с нами напрямую для быстрой помощи.',
+                bookingButton: 'Google Календарь',
+                bookingPhone: 'Позвонить для записи',
+                bookingEmail: 'Записаться по электронной почте',
+                pricesTitle: 'Прозрачные цены',
+                contactHeading: 'Готовы к дороге?',
+                contactText: 'Напишите нам сообщение или посетите автошколу лично.',
+                contactCta: 'Отправить запрос',
+                locationsTitle: 'Наши филиалы',
+                resourcesTitle: 'Полезные ресурсы',
+                professionalTrainingTitle: 'Профессиональное обучение водителей',
+                handicapTitle: '♿ Люди с инвалидностью',
+                modalAddress: 'Адрес:',
+                modalPhone: 'Телефон:',
+                modalHours: 'Часы работы:',
+                mondayThursday: 'Понедельник - Четверг: 09:00 - 13:00, 14:00 - 18:00',
+                friday: 'Пятница: 10:00 - 14:30',
+                weekend: 'Суббота: Закрыто<br>Воскресенье: Закрыто',
+                teamTitle: 'Наша команда',
+                partnersTitle: 'Наши партнеры',
+                priceClassB: 'Класс B',
+                priceClassB197: 'B197 (Автоматик)',
+                priceFeeB: 'Основной сбор: 290€',
+                priceFeeB197: 'Основной сбор: 250€',
+                priceFeatureB1: 'Теоретическое обучение',
+                priceFeatureB2: 'Современные учебные автомобили',
+                priceFeatureB3: 'Включено обучающее приложение',
+                priceFeatureB1971: 'Комбинация ручных и автоматических коробок',
+                priceFeatureB1972: 'Нет тестового экзамена',
+                priceFeatureB1973: 'Безопасное вождение будущего',
+                bookingSlotMondoThurs: 'Пн - Чт',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'Пятница',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'Онлайн',
+                bookingOptionOnline: 'Запись по календарю',
+                bookingSlotPhone: 'Телефон',
+                bookingPhoneNumber: '+49 40 7 63 43 77',
+                resourceLbvTitle: '🏛️ Германия (ДО)',
+                resourceLbvText: 'Найдите всю важную информацию, услуги и онлайн-сервисы регистрации и снятия вс регистрации, водительских прав и стояния в Гамбурге.',
+                resourceLbvLink: 'к веб-сайту LBV',
+                resourceLbvTermsTitle: '📅 Научные термины',
+                resourceLbvTermsText: 'Запишитесь по экзамене водителя или регистрации вам в системе приём ТО.',
+                resourceLbvTermsLink: 'Запись термин',
+                trainingTabIndividual: 'Отдельные семинары',
+                trainingTabWeekly: 'Недельные семинары',
+                trainingTabAccelerated: 'Ускоренная базовая квалификация',
+                trainingCardIndividualTitle: '📋 Отдельные семинары',
+                trainingCardIndividualText: 'Гибкое индивидуальное обучение для профессиональных водителей. Термины по согласованию – оформите обучение в соответствии с вашими требованиями.',
+                trainingCardWeeklyTitle: '📅 Недельные семинары',
+                trainingCardWeeklyText: 'Основные многодневные обучение. Мы покатались с вами другие семинары и выделили время на планирование в соответствии с вашими потребностями.',
+                trainingCardAcceleratedTitle: '⚡ Ускоренная базовая квалификация',
+                trainingCardAcceleratedText: 'Компактная базовая квалификация для профессиональных водителей. Эффективное обучение с  на спольнение на практическом экзамене.',
+                handicapCardExpTitle: '🏆 Опыт',
+                handicapCardExpText: 'С 2007 г. мы обучаем людей с нарушениями. Наши инструкторы специально подготовлены и имеют долголетний опыт специального обучения.',
+                handicapCardBarrierTitle: '🚪 Доступность',
+                handicapCardBarrierText: 'Все наши автошколы легко достаточны. Остановки в объеме есть в объеме. Теоретическое обучение проводится совместно для учащихся с нарушениями и без них.',
+                handicapCardExpertTitle: '📋 Подробные оценки',
+                handicapCardExpertText: 'Мы прокатываем иных ограничение водителя. Наши эксперты окажут вам а вашему врачу прину решения.',
+                handicapCardSupportTitle: '💰 Поддержка',
+                handicapCardSupportText: 'Мы помогаем вам в получении реабилитации через Немецкострахованние пенсий. Консультация и на использование для вашей ситуации.',
+                handicapCtaText: 'Есть вопросы или нужна консультация?',
+                handicapCtaButton: 'Свяжитесь с нами',
+                teamTabOffice: 'Офисные работники',
+                teamTabInstructors: 'Наставники',
+                teamTabRetired: 'Пенсионеры',
+                teamSubtitle: 'Познакомьтесь с нашей командой',
+                teamNeededTitle: 'Ищем инструкторов и сотрудников!',
+                teamNeededText: 'Мы будем рады приветствовать вас в нашей команде. Свяжитесь с нами',
+                footerImpressum: 'Обязательные юридические данные',
+                footerDatenschutz: 'Политика конфиденциальности'
+            },
+            ar: {
+                navPrice: 'الأسعار',
+                navContact: 'اتصل',
+                navMore: 'المزيد',
+                navBooking: 'حجز موعد',
+                navLicense: 'معلومات الرخصة',
+                navResources: 'الموارد',
+                navTraining: 'التدريب المهني',
+                navHandicap: 'إمكانية الوصول',
+                navTeam: 'الفريق',
+                navPartners: 'الشركاء',
+                slideshowTitle: 'صور مدارس القيادة لدينا',
+                onlineRegistrationCta: 'التسجيل عبر الإنترنت',
+                heroTitle: 'رخصة قيادتك في <br><span class="highlight">هامبورغ.</span>',
+                heroText: 'آمن، حديث وبدون ضغط نحو الهدف. احجز درس القيادة الأول الآن.',
+                heroCta: 'ابدأ الآن',
+                heroPrices: 'عرض الأسعار',
+                heroBook: 'حجز موعد',
+                bookingTitle: 'حجز موعد عبر الإنترنت',
+                bookingText: 'اختر موعدك من التقويم أو اتصل بنا مباشرةً للمساعدة الفورية.',
+                bookingButton: 'تقويم Google',
+                bookingPhone: 'الحجز عبر الهاتف',
+                bookingEmail: 'الحجز عبر البريد الإلكتروني',
+                pricesTitle: 'أسعار شفافة',
+                contactHeading: 'هل أنت مستعد للطريق؟',
+                contactText: 'أرسل لنا رسالة أو قم بزيارة مدرسة القيادة شخصياً.',
+                contactCta: 'إرسال الطلب',
+                locationsTitle: 'مواقعنا',
+                resourcesTitle: 'موارد مفيدة',
+                professionalTrainingTitle: 'تدريب السائقين المحترفين',
+                handicapTitle: '♿ الأشخاص ذوو الإعاقة',
+                modalAddress: 'العنوان:',
+                modalPhone: 'الهاتف:',
+                modalHours: 'ساعات العمل:',
+                mondayThursday: 'الاثنين - الخميس: 09:00 - 13:00, 14:00 - 18:00',
+                friday: 'الجمعة: 10:00 - 14:30',
+                weekend: 'السبت: مغلق<br>الأحد: مغلق',
+                teamTitle: 'فريقنا',
+                partnersTitle: 'شركاؤنا',
+                priceClassB: 'الفئة B',
+                priceClassB197: 'B197 (الأوتوماتيكي)',
+                priceFeeB: 'رسم أساسي: 290€',
+                priceFeeB197: 'رسم أساسي: 250€',
+                priceFeatureB1: 'التعليم النظري',
+                priceFeatureB2: 'رسوم تدريب حديثة',
+                priceFeatureB3: 'تطبيق التعلم المدمج',
+                priceFeatureB1971: 'خليط من العيارات هاندواب والأوتوماتيكي',
+                priceFeatureB1972: 'بدون التوتر الامتحان',
+                priceFeatureB1973: 'قيادة آمنة للمستقبل',
+                bookingSlotMondoThurs: 'الاثنين - الخميس',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'الجمعة',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'إنترنت',
+                bookingOptionOnline: 'الحزم عبر التقويم',
+                bookingSlotPhone: 'هاتف',
+                bookingPhoneNumber: '+49 40 7 63 43 77',
+                resourceLbvTitle: '🏛️ سلطة النقل',
+                resourceLbvText: 'البحث عن جميع معلومات مهمة وحدمات متعلقة بتسجيل وإلغاء التسجيل للمركبات وأرخص المركبات ورخص قيادة الأشخاص ذوو الإعاقة في هامبورغ.',
+                resourceLbvLink: 'إلى موقع LBV',
+                resourceLbvTermsTitle: '📅 حجز موعد',
+                resourceLbvTermsText: 'حجز موعدل لامتحان قيادة أو تسجيل رباطي مباشرة في نظام حجز رشصذ LBV.',
+                resourceLbvTermsLink: 'تمت جدولة موعد',
+                trainingTabIndividual: 'دورة منفردة',
+                trainingTabWeekly: 'دورة أسبوعية',
+                trainingTabAccelerated: 'برنامج الأهلية الأساسية مرع',
+                trainingCardIndividualTitle: '📋 دورة منفردة',
+                trainingCardIndividualText: 'التدريب الفردي المرن لسواقي النقل المحترفين. موعد بحسب الترتيب - بجعل التعلم وفقاً لمتطلبات الغلق.',
+                trainingCardWeeklyTitle: '📅 دورة أسبوعية',
+                trainingCardWeeklyText: 'تضفيف مرتع على عدة أيام. نبني الدورة كل شخص بمعاع - البحبا الاستشارة وتخطيط ردأ احتياجات الطلاب.',
+                trainingCardAcceleratedTitle: '⚡ برنامج الأهلية الأساسية مرع',
+                trainingCardAcceleratedText: 'برنامج أهلية أساسية فشردة لسواقي النقل المحترفين. تدريب فعال معع تجهيز شامل لامتحان عملي.',
+                handicapCardExpTitle: '🏆 الخبرة',
+                handicapCardExpText: 'منذ 2007 بكم الأشخاص ذوو الإعاقة. معلمو قيادتنا مدربون بشكل خاص ولديهم سنوات عادية في تدريب الإعاقة.',
+                handicapCardBarrierTitle: '🚪 الوصولية',
+                handicapCardBarrierText: 'مجميع مدارس قيادتنا مباشرة الوصول. موقل الحافلات موجودة مباشرة. يتم تنفيذ التعلم المنظومي مع الطلاب ذوو الإعاقة وبدونها.',
+                handicapCardExpertTitle: '📋 بيانات خبيرة',
+                handicapCardExpertText: 'نحن إعداد والويرود حول القدرة على القيادة. خبراؤنا يساعدرك أنت وطبيبك على اتخاذ برار حول القيادة.',
+                handicapCardSupportTitle: '💰 الدعم',
+                handicapCardSupportText: 'نحن يساعدرك لللاعت اجلم الرخص عبر التأمين بالألم الألماني. لاستشارة والحلول التي التوشي لهفاحة خلاجتك.',
+                handicapCtaText: 'هل يوجد لديك استفسارات أم بريد امتشارة؟',
+                handicapCtaButton: 'لاا اتصال',
+                teamTabOffice: 'موظفي المكتب',
+                teamTabInstructors: 'معلماو قيادة',
+                teamTabRetired: 'المتقاعدين',
+                teamSubtitle: 'تعرف على فريقنا المخصص',
+                teamNeededTitle: 'نبحث عن مدربين وموظفين!',
+                teamNeededText: 'سيسعدنا استقبالك في فريقنا. تواصل معنا',
+                footerImpressum: 'إشعار قانوني',
+                footerDatenschutz: 'سياسة الخصوصية'
+            },
+            tr: {
+                navPrice: 'Fiyatlar',
+                navContact: 'İletişim',
+                navMore: 'Daha fazla',
+                navBooking: 'Randevu al',
+                navLicense: 'Sürücü belgesi bilgisi',
+                navResources: 'Kaynaklar',
+                navTraining: 'Profesyonel Eğitim',
+                navHandicap: 'Erişilebilirlik',
+                navTeam: 'Takım',
+                navPartners: 'Ortaklar',
+                slideshowTitle: 'Sürücü kursumuzdan fotoğraflar',
+                onlineRegistrationCta: 'Çevrimiçi kayıt',
+                heroTitle: 'Sürücü belgeniz <br><span class="highlight">Hamburg’da.</span>',
+                heroText: 'Güvenli, modern ve stressiz bir şekilde hedefe. İlk dersinizi hemen ayırtın.',
+                heroCta: 'Şimdi başla',
+                heroPrices: 'Fiyatlara bak',
+                heroBook: 'Termin buchen',
+                bookingTitle: 'Çevrimiçi randevu al',
+                bookingText: 'Randevunuzu takvimden seçin veya hemen yardım için doğrudan bizi arayın.',
+                bookingButton: 'Google Takvim',
+                bookingPhone: 'Telefonla rezervasyon',
+                bookingEmail: 'E-posta ile rezervasyon',
+                pricesTitle: 'Şeffaf fiyatlar',
+                contactHeading: 'Yola hazır mısınız?',
+                contactText: 'Bize bir mesaj gönderin veya sürücü kursunu doğrudan ziyaret edin.',
+                contactCta: 'Talep gönder',
+                locationsTitle: 'Konumlarımız',
+                resourcesTitle: 'Faydalı Kaynaklar',
+                professionalTrainingTitle: 'Profesyonel Sürücü Eğitimi',
+                handicapTitle: '♿ Engelli Kişiler',
+                modalAddress: 'Adres:',
+                modalPhone: 'Telefon:',
+                modalHours: 'Çalışma Saatleri:',
+                mondayThursday: 'Pazartesi - Perşembe: 09:00 - 13:00, 14:00 - 18:00',
+                friday: 'Cuma: 10:00 - 14:30',
+                weekend: 'Cumartesi: Kapalı<br>Pazar: Kapalı',
+                teamTitle: 'Takımımız',
+                partnersTitle: 'Ortaklarımız',
+                priceClassB: 'Sınıf B',
+                priceClassB197: 'B197 (Otomatik)',
+                priceFeeB: 'Taban üreti: 290€',
+                priceFeeB197: 'Taban üreti: 250€',
+                priceFeatureB1: 'Teorik eğitim',
+                priceFeatureB2: 'Modern eğitim araçları',
+                priceFeatureB3: 'Eğitim uygulaması dahil',
+                priceFeatureB1971: 'Manuel ve otomatik karışımı',
+                priceFeatureB1972: 'Sınav korkusu yok',
+                priceFeatureB1973: 'Gelecek için güvenli sürüş',
+                bookingSlotMondoThurs: 'Pzt - Per',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'Cuma',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'Çevrimiçi',
+                bookingOptionOnline: 'Takvim aracılığıyla rezervasyon',
+                bookingSlotPhone: 'Telefon',
+                bookingPhoneNumber: '+49 40 7 63 43 77',
+                resourceLbvTitle: '🏛️ Bölge Ulaştırma Dairesi (LBV)',
+                resourceLbvText: 'Araç kaydı ve kaydı silme, sürüş lisansı ve Hamburg\'da park etme konularında tüm önemli bilgileri, hizmetleri ve çevrimiçi hizmetleri bulun.',
+                resourceLbvLink: 'LBV web sitesine',
+                resourceLbvTermsTitle: '📅 Randevu al',
+                resourceLbvTermsText: 'Sürüş sınavı veya araç kaydı için randevunuzu doğrudan LBV randevu sisteminde alın.',
+                resourceLbvTermsLink: 'Randevu ayırt',
+                trainingTabIndividual: 'Bireysel seminer',
+                trainingTabWeekly: 'Haftalık seminer',
+                trainingTabAccelerated: 'Hızlandırılmış temel nitelik',
+                trainingCardIndividualTitle: '📋 Bireysel seminer',
+                trainingCardIndividualText: 'Profesyonel şoförler için esnek bireysel eğitim. Randevular görüşme yoluyla – eğitimi gereksinimlerinize göre tasarlayın.',
+                trainingCardWeeklyTitle: '📅 Haftalık seminer',
+                trainingCardWeeklyText: 'Birkaç gün süren yoğun eğitim. Semineri sizinle birlikte tasarlarız – ihtiyaçlarınız doğrultusunda danışmanlık ve planlama.',
+                trainingCardAcceleratedTitle: '⚡ Hızlandırılmış temel nitelik',
+                trainingCardAcceleratedText: 'Profesyonel şoförler için kompakt temel nitelik. Pratik sınava kapsamlı hazırlık ile verimli eğitim.',
+                handicapCardExpTitle: '🏆 Tecrübe',
+                handicapCardExpText: '2007 yılından beri engelli kişileri eğitiyoruz. Eğitmenlerimiz özel eğitimli ve engellilik eğitiminde uzun yıllara sahiptir.',
+                handicapCardBarrierTitle: '🚪 Erişilebilirlik',
+                handicapCardBarrierText: 'Tüm sürücü kurslarımıza kolayca ulaşılabilir. Otobüs duraklari hemen yakınında. Teorik eğitim, engelli ve engelsiz öğrencilerle birlikte yürütülür.',
+                handicapCardExpertTitle: '📋 Uzman değerlendirmeleri',
+                handicapCardExpertText: 'Arabulucu test ve değerlendirmeler yapıyoruz. Uzmanlarımız sizi ve doktorunuzu karar verme konusunda yardımcı olur.',
+                handicapCardSupportTitle: '💰 Destek',
+                handicapCardSupportText: 'Alman sosyal sigorta kurumunun mesleki rehabilitasyonunda yardımcı oluyoruz. Sizin durumunuza uygun danışmanlık ve çözümler.',
+                handicapCtaText: 'Soruşturmalar mı var yoksa danışmanlık mı istersiniz?',
+                handicapCtaButton: 'Bize ulaşın',
+                teamTabOffice: 'Ofis personeli',
+                teamTabInstructors: 'Eğitmenler',
+                teamTabRetired: 'Emekli olanlar',
+                teamSubtitle: 'Adanmış ekibimizi tanıyın',
+                teamNeededTitle: 'Eğitmen ve Personel Aranıyor!',
+                teamNeededText: 'Sizi ekibimizde görmekten memnun oluruz. Bize ulaşın',
+                footerImpressum: 'Yasal uyarı',
+                footerDatenschutz: 'Gizlilik politikası'
+            },
+            fa: {
+                navPrice: 'قیمت‌ها',
+                navContact: 'تماس',
+                navMore: 'بیشتر',
+                navBooking: 'رزرو وقت',
+                navLicense: 'اطلاعات گواهینامه',
+                navResources: 'منابع',
+                navTraining: 'آموزش حرفه‌ای',
+                navHandicap: 'دسترسی‌پذیری',
+                navTeam: 'تیم',
+                navPartners: 'شركاء',
+                slideshowTitle: 'عکس‌هایی از مدرسه‌ رانندگی ما',
+                onlineRegistrationCta: 'ثبت نام آنلاین',
+                heroTitle: 'گواهینامه شما در <br><span class="highlight">هامبورگ.</span>',
+                heroText: 'ایمن، مدرن و بدون استرس تا هدف. هم‌اکنون اولین درس را رزرو کنید.',
+                heroCta: 'شروع کنید',
+                heroPrices: 'مشاهده قیمت‌ها',
+                heroBook: 'رزرو وقت',
+                bookingTitle: 'رزرو وقت آنلاین',
+                bookingText: 'زمان خود را از تقویم انتخاب کنید یا برای دریافت کمک فوری مستقیماً با ما تماس بگیرید.',
+                bookingButton: 'تقویم گوگل',
+                bookingPhone: 'رزرو با تلفن',
+                bookingEmail: 'رزرو با ایمیل',
+                pricesTitle: 'قیمت‌های شفاف',
+                contactHeading: 'آماده هستید برای جاده؟',
+                contactText: 'برای ما پیام بفرستید یا شخصاً به آموزشگاه رانندگی سر بزنید.',
+                contactCta: 'ارسال درخواست',
+                locationsTitle: 'مکان‌های ما',
+                resourcesTitle: 'منابع مفید',
+                professionalTrainingTitle: 'آموزش راننده حرفه‌ای',
+                handicapTitle: '♿ افراد معلول',
+                modalAddress: 'آدرس:',
+                modalPhone: 'تلفن:',
+                modalHours: 'ساعات کاری:',
+                mondayThursday: 'دوشنبه - پنج‌شنبه: ۰۹:۰۰ - ۱۳:۰۰, ۱۴:۰۰ - ۱۸:۰۰',
+                friday: 'جمعه: ۱۰:۰۰ - ۱۴:۳۰',
+                weekend: 'شنبه: بسته<br>یک‌شنبه: بسته',
+                teamTitle: 'تیم ما',
+                partnersTitle: 'شرکای ما',
+                priceClassB: 'رده B',
+                priceClassB197: 'B197 (خودکار)',
+                priceFeeB: 'هزینه ابتدایی: 290€',
+                priceFeeB197: 'هزینه ابتدایی: 250€',
+                priceFeatureB1: 'آموزش نظری',
+                priceFeatureB2: 'خودروهای آموزشی مدرن',
+                priceFeatureB3: 'شامل العم آموزشی',
+                priceFeatureB1971: 'مخلوطی سوایان دستی و خودکار',
+                priceFeatureB1972: 'بزه بی از طراب آزمون',
+                priceFeatureB1973: 'رانندگی امن برای آینده',
+                bookingSlotMondoThurs: 'دو - بر',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'جمعه',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'آنلاین',
+                bookingOptionOnline: 'رزرو با تقویم',
+                bookingSlotPhone: 'تلفن',
+                bookingPhoneNumber: '+49 40 7 63 43 77',
+                resourceLbvTitle: '🏛️ نهاد رابح ایلاتی',
+                resourceLbvText: 'معلومات مهم و خدمات رباتی مربوط به ثبت و حذف در یال رانهمای و پارکنگ در هامبورگ بیابید.',
+                resourceLbvLink: 'به وب سایت LBV',
+                resourceLbvTermsTitle: '📅 رزرو موعد',
+                resourceLbvTermsText: 'مستقیم موعد خود را برای آزمایش رانندگی یا ثبت در سیستم رزرو LBV گذار کنید.',
+                resourceLbvTermsLink: 'رزرو موعد',
+                trainingTabIndividual: 'سمينار انفرادی',
+                trainingTabWeekly: 'سمينار هفته ای',
+                trainingTabAccelerated: 'الاهليه اساسي شتاب',
+                trainingCardIndividualTitle: '📋 سمينار انفرادی',
+                trainingCardIndividualText: 'آموزش فردی مرن برای رانندگان حرفه ای. موعد طبق بم اختيار – آموزش را طبق منافع خود طراحی کنید.',
+                trainingCardWeeklyTitle: '📅 سمينار هفته ای',
+                trainingCardWeeklyText: 'آموزش ريز روز تعدد. سمينار را با فرد به صورت انفرادی منظم کنیم - مشاوره و برنامه ريزی طبق نيازهای شما.',
+                trainingCardAcceleratedTitle: '⚡ الاهليه اساسي شتاب',
+                trainingCardAcceleratedText: 'الاهليه اساسي فشرده برای رانندگان حرفه ای. آموزش موثر با آمادگی جامع برای آزمایش عملی.',
+                handicapCardExpTitle: '🏆 سابقه',
+                handicapCardExpText: 'از 2007 افراد معلول را آموزش میدهیم. مربیان ما ارخمند از طریق آموزش جداگانه هستند و سال های زیادی تجربه دارند.',
+                handicapCardBarrierTitle: '🚪 دسترسی',
+                handicapCardBarrierText: 'همه مدارس رانندگی ما برای دسترسی آسان هستند. ایستگاه اتوبوس در کنار قرار دارند. آموزش نظری با دانش آموزان معلول و غیر معلول به صورت جمعه انجام کبرستان می رود.',
+                handicapCardExpertTitle: '📋 رای نظر متخصصان',
+                handicapCardExpertText: 'تست رانندگی و رای نظر برای ارزیابی اهلیت رانندگی ارائه میدهیم. متخصصان ما شما و دکتر خود را در تبر حل یاری می کنند.',
+                handicapCardSupportTitle: '💰 کمک رسانی',
+                handicapCardSupportText: 'از راه بیمه کارگری آلمان شما را در بازابی حرفه ای یاری می کنیم. مشاوره و حل های فردی برای شرایط بخصوص شما.',
+                handicapCtaText: 'آیا سوال دارید یا فقط مشاوره طلب می کنید?',
+                handicapCtaButton: 'با ما تماس بگیرید',
+                teamTabOffice: 'کارمندان اداری',
+                teamTabInstructors: 'مربیان',
+                teamTabRetired: 'بازنشستگان',
+                teamSubtitle: 'تیم اختصاصی ما را بشناسید',
+                teamNeededTitle: 'جستجو برای مربیان و کارمندان!',
+                teamNeededText: 'ما خوشحال خواهیم شد شما را در تیم خود خوش آمد گویم. با ما تماس بگیرید',
+                footerImpressum: 'اطلاعیه قانونی',
+                footerDatenschutz: 'سیاست تز ایزی'
+            },
+            ha: {
+                navPrice: 'Farashi',
+                navContact: 'Tuntube',
+                navMore: 'Ƙari',
+                navBooking: 'Yi ajiyar lokaci',
+                navLicense: 'Bayani game da lasisi',
+                navResources: 'Albarkatun',
+                navTraining: 'Horon Sana\'a Sana\'a',
+                navHandicap: 'Saurin Shiga',
+                navTeam: 'Ƙungiya',
+                navPartners: 'Abokan Ciniki',
+                slideshowTitle: 'Hotunan makarantar tuƙi namu',
+                onlineRegistrationCta: 'Rajistar kan layi',
+                heroTitle: 'Lasisin direba a <br><span class="highlight">Hamburg.</span>',
+                heroText: 'Aminci, zamani da ba tare da damuwa ba zuwa makama. Yi ajiyar darasi na farko yanzu.',
+                heroCta: 'Fara yanzu',
+                heroPrices: 'Duba farashi',
+                heroBook: 'Yi ajiyar lokaci',
+                bookingTitle: 'Yi ajiyar lokaci ta yanar gizo',
+                bookingText: 'Zaɓi lokacin ku daga kalandar ko tuntuɓi mu kai tsaye don taimako nan da nan.',
+                bookingButton: 'Google Calendar',
+                bookingPhone: 'Yi ajiyar lokaci ta waya',
+                bookingEmail: 'Yi ajiyar lokaci ta imel',
+                pricesTitle: 'Farashi masu gaskiya',
+                contactHeading: 'Shirye don hanya?',
+                contactText: 'Aiko mana da sako ko ziyarci makarantar tuƙi kai tsaye.',
+                contactCta: 'Aika buƙata',
+                locationsTitle: 'Gidajen mu',
+                resourcesTitle: 'Albashan Abubuwa',
+                professionalTrainingTitle: 'Horon Direba Ɗin Gida',
+                handicapTitle: '♿ Mutanen da ba su da iko',
+                modalAddress: 'Adireshi:',
+                modalPhone: 'Waya:',
+                modalHours: 'Lokutan aiki:',
+                mondayThursday: 'Litinin - Alhamis: 09:00 - 13:00, 14:00 - 18:00',
+                friday: 'Jumma\'a: 10:00 - 14:30',
+                weekend: 'Asabar: An rufe<br>Lahadi: An rufe',
+                teamTitle: 'Ƙungiyarmu',
+                partnersTitle: 'Abokanmu',
+                priceClassB: 'Rabon B',
+                priceClassB197: 'B197 (Atomatik)',
+                priceFeeB: 'Ku kudu: 290€',
+                priceFeeB197: 'Ku kudu: 250€',
+                priceFeatureB1: 'Horon ka theory',
+                priceFeatureB2: 'Sayyar horon na zamani',
+                priceFeatureB3: 'Cikakke app',
+                priceFeatureB1971: 'Gida daga jiya da atomatik',
+                priceFeatureB1972: 'Babu jita-jitatsu',
+                priceFeatureB1973: 'Ajiyar gida',
+                bookingSlotMondoThurs: 'Lit - Alh',
+                bookingTimeMondoThurs: '09:00 - 13:00',
+                bookingTimeMondoThurs2: '14:00 - 18:00',
+                bookingSlotFriday: 'Jumma\'a',
+                bookingTimeFriday: '10:00 - 14:30',
+                bookingSlotOnline: 'Layi',
+                bookingOptionOnline: 'Ajiye ta kalandar',
+                bookingSlotPhone: 'Waya',
+                bookingPhoneNumber: '+49 40 7 63 43 77',
+                resourceLbvTitle: '🏛️ Hukumar Jidar Kasa (LBV)',
+                resourceLbvText: 'Nemi duk mahimman bayani, sabis da online-sabis game da jiyar haihuwa, ninka haihuwa, lasisi da tuƙi a Hamburg.',
+                resourceLbvLink: 'Gida LBV',
+                resourceLbvTermsTitle: '📅 Yi ajiyar lokaci',
+                resourceLbvTermsText: 'Yi ajiyar lokacin ka kai tsaye don jarjar ƙaratu ko jiyar jidun a tsarin ajiyar LBV.',
+                resourceLbvTermsLink: 'Yi ajiyar lokaci',
+                trainingTabIndividual: 'Semina na mutum gida',
+                trainingTabWeekly: 'Semina na mako',
+                trainingTabAccelerated: 'Karanticewar basu gida',
+                trainingCardIndividualTitle: '📋 Semina na mutum gida',
+                trainingCardIndividualText: 'Horon na mutum gida mai fa\'iko don direba ƙwararru. Lokuta game da kwangila - tsare horon kai tsaye game da abubuwan da ƙa so.',
+                trainingCardWeeklyTitle: '📅 Semina na mako',
+                trainingCardWeeklyText: 'Horon mai ƙarfi a lokuta da yawa. Muke tsara semina kai tsaye tare da kai - shawarwa da tsare waje game da abubuwan da ƙa so.',
+                trainingCardAcceleratedTitle: '⚡ Karanticewar basu gida',
+                trainingCardAcceleratedText: 'Karancewar basu gida mace don direba ƙwararru. Horon mai inganci tare da shirye-shiryen cikakke don jarjar aiki.',
+                handicapCardExpTitle: '🏆 Gwaninta',
+                handicapCardExpText: 'Tun 2007 muke horon mutanen da ba su da iko. Mu malamai suna da karantice na musamman kuma suna da shekaru da yawa na gwaninta a horon da ba su da iko.',
+                handicapCardBarrierTitle: '🚪 Samun shiga',
+                handicapCardBarrierText: 'Duk farashin horon muna da sauƙi na shiga. Tashar bas yana a karko. Horon theory ana yin shi tare da ɗiwa da ba su da iko da ɓa sun sami wuri.',
+                handicapCardExpertTitle: '📋 Biayen masana',
+                handicapCardExpertText: 'Muna yin jarjar agogo da biayen karatun agogo. Masu buni namu suna taimakonka da likita kai don yanke shawara.',
+                handicapCardSupportTitle: '💰 Tallafi',
+                handicapCardSupportText: 'Muna taimakonka a sake aiki ta hanyar German stressarantali. Shawarwa da mafita na musamman para asali na kai.',
+                handicapCtaText: 'Kina da tambayoyi ko kina so shawarwa?',
+                handicapCtaButton: 'Yi tuntuwa',
+                teamTabOffice: 'Ma\'aikatan kasuwa',
+                teamTabInstructors: 'Malamai',
+                teamTabRetired: 'Wadanda suka yi huta',
+                teamSubtitle: 'Sanin jami\'armu mai sadiya',
+                teamNeededTitle: 'Neman Malamai da Ma\'aikataci!',
+                teamNeededText: 'Zamu yi farin ciki in karba ka a jami\'armu. Tuntuɓi mu',
+                footerImpressum: 'Sanarwa na shari\'a',
+                footerDatenschutz: 'Jerin-iren ku\'din sirri'
+            }
+        };
+
+        const translationKeys = [
+            ['nav-price', 'navPrice'],
+            ['nav-booking', 'navBooking'],
+            ['nav-license', 'navLicense'],
+            ['nav-resources', 'navResources'],
+            ['nav-training', 'navTraining'],
+            ['nav-handicap', 'navHandicap'],
+            ['nav-team', 'navTeam'],
+            ['nav-partners', 'navPartners'],
+            ['nav-more', 'navMore'],
+            ['nav-contact', 'navContact'],
+            ['slideshow-title', 'slideshowTitle'],
+            ['online-registration-button', 'onlineRegistrationCta'],
+            ['hero-title', 'heroTitle'],
+            ['hero-text', 'heroText'],
+            ['hero-cta', 'heroCta'],
+            ['hero-prices', 'heroPrices'],
+            ['hero-book', 'heroBook'],
+            ['booking-title', 'bookingTitle'],
+            ['booking-text', 'bookingText'],
+            ['booking-button', 'bookingButton'],
+            ['booking-phone', 'bookingPhone'],
+            ['booking-email', 'bookingEmail'],
+            ['prices-title', 'pricesTitle'],
+            ['contact-heading', 'contactHeading'],
+            ['contact-text', 'contactText'],
+            ['contact-cta', 'contactCta'],
+            ['locations-title', 'locationsTitle'],
+            ['resources-title', 'resourcesTitle'],
+            ['professional-training-title', 'professionalTrainingTitle'],
+            ['handicap-title', 'handicapTitle'],
+            ['team-title', 'teamTitle'],
+            ['partners-title', 'partnersTitle'],
+            ['modal-address', 'modalAddress'],
+            ['modal-phone', 'modalPhone'],
+            ['modal-hours', 'modalHours'],
+            ['monday-thursday', 'mondayThursday'],
+            ['friday-hours', 'friday'],
+            ['weekend-hours', 'weekend'],
+            ['price-class-b', 'priceClassB'],
+            ['price-class-b197', 'priceClassB197'],
+            ['price-fee-b', 'priceFeeB'],
+            ['price-fee-b197', 'priceFeeB197'],
+            ['price-feature-b1', 'priceFeatureB1'],
+            ['price-feature-b2', 'priceFeatureB2'],
+            ['price-feature-b3', 'priceFeatureB3'],
+            ['price-feature-b197-1', 'priceFeatureB1971'],
+            ['price-feature-b197-2', 'priceFeatureB1972'],
+            ['price-feature-b197-3', 'priceFeatureB1973'],
+            ['booking-slot-mondothurs', 'bookingSlotMondoThurs'],
+            ['booking-time-mondothurs', 'bookingTimeMondoThurs'],
+            ['booking-time-mondothurs2', 'bookingTimeMondoThurs2'],
+            ['booking-slot-friday', 'bookingSlotFriday'],
+            ['booking-time-friday', 'bookingTimeFriday'],
+            ['booking-slot-online', 'bookingSlotOnline'],
+            ['booking-option-online', 'bookingOptionOnline'],
+            ['booking-slot-phone', 'bookingSlotPhone'],
+            ['booking-phone-number', 'bookingPhoneNumber'],
+            ['resource-lbv-title', 'resourceLbvTitle'],
+            ['resource-lbv-text', 'resourceLbvText'],
+            ['resource-lbv-link', 'resourceLbvLink'],
+            ['resource-lbv-terms-title', 'resourceLbvTermsTitle'],
+            ['resource-lbv-terms-text', 'resourceLbvTermsText'],
+            ['resource-lbv-terms-link', 'resourceLbvTermsLink'],
+            ['training-tab-individual', 'trainingTabIndividual'],
+            ['training-tab-weekly', 'trainingTabWeekly'],
+            ['training-tab-accelerated', 'trainingTabAccelerated'],
+            ['training-card-individual-title', 'trainingCardIndividualTitle'],
+            ['training-card-individual-text', 'trainingCardIndividualText'],
+            ['training-card-weekly-title', 'trainingCardWeeklyTitle'],
+            ['training-card-weekly-text', 'trainingCardWeeklyText'],
+            ['training-card-accelerated-title', 'trainingCardAcceleratedTitle'],
+            ['training-card-accelerated-text', 'trainingCardAcceleratedText'],
+            ['handicap-card-exp-title', 'handicapCardExpTitle'],
+            ['handicap-card-exp-text', 'handicapCardExpText'],
+            ['handicap-card-barrier-title', 'handicapCardBarrierTitle'],
+            ['handicap-card-barrier-text', 'handicapCardBarrierText'],
+            ['handicap-card-expert-title', 'handicapCardExpertTitle'],
+            ['handicap-card-expert-text', 'handicapCardExpertText'],
+            ['handicap-card-support-title', 'handicapCardSupportTitle'],
+            ['handicap-card-support-text', 'handicapCardSupportText'],
+            ['handicap-cta-text', 'handicapCtaText'],
+            ['handicap-cta-button', 'handicapCtaButton'],
+            ['team-tab-office', 'teamTabOffice'],
+            ['team-tab-instructors', 'teamTabInstructors'],
+            ['team-tab-retired', 'teamTabRetired'],
+            ['footer-impressum', 'footerImpressum'],
+            ['footer-datenschutz', 'footerDatenschutz']
+        ];
+
+        function applyLanguage(lang) {
+            const translation = translations[lang] || translations.de;
+            translationKeys.forEach(([id, key]) => {
+                const element = document.getElementById(id);
+                if (!element) return;
+                if (key === 'heroTitle') {
+                    element.innerHTML = translation[key];
+                } else {
+                    element.textContent = translation[key];
+                }
+            });
+
+            // Translate modal elements
+            const modalKeys = [
+                ['modal-address', 'modalAddress'],
+                ['modal-phone', 'modalPhone'],
+                ['modal-hours', 'modalHours'],
+                ['monday-thursday', 'mondayThursday'],
+                ['friday-hours', 'friday'],
+                ['weekend-hours', 'weekend']
+            ];
+            modalKeys.forEach(([id, key]) => {
+                const elements = document.querySelectorAll('#' + id);
+                elements.forEach(el => {
+                    if (key === 'weekend') {
+                        el.innerHTML = translation[key];
+                    } else {
+                        el.textContent = translation[key];
+                    }
+                });
+            });
+
+            document.documentElement.dir = (lang === 'ar' || lang === 'fa') ? 'rtl' : 'ltr';
+            document.querySelectorAll('body *').forEach(el => {
+                if (document.documentElement.dir === 'rtl') {
+                    el.style.textAlign = el.tagName === 'A' || el.tagName === 'BUTTON' ? '' : 'right';
+                } else {
+                    el.style.textAlign = '';
+                }
+            });
+            localStorage.setItem('holstLanguage', lang);
+        }
+
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('slide-dots');
+        let currentSlide = 0;
+        let slideTimer;
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dotsContainer.children[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dotsContainer.children[currentSlide].classList.add('active');
+        }
+
+        function createDots() {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = 'slide-dot';
+                dot.setAttribute('aria-label', `Bild ${index + 1}`);
+                dot.addEventListener('click', () => {
+                    resetTimer();
+                    showSlide(index);
+                });
+                dotsContainer.appendChild(dot);
+            });
+            dotsContainer.children[0].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function resetTimer() {
+            clearInterval(slideTimer);
+            slideTimer = setInterval(nextSlide, 4000);
+        }
+
+        createDots();
+        document.querySelector('.slide-btn.next').addEventListener('click', () => { nextSlide(); resetTimer(); });
+        document.querySelector('.slide-btn.prev').addEventListener('click', () => { prevSlide(); resetTimer(); });
+        slideTimer = setInterval(nextSlide, 4000);
+
+        // Tab switching functionality for Professional Training
+        const tabButtons = document.querySelectorAll('.training-tab-btn');
+        const tabContents = document.querySelectorAll('.training-tab');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and tabs
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(tab => tab.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding tab
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Modal functionality for locations
+        const locationCards = document.querySelectorAll('.location-card');
+        const modals = document.querySelectorAll('.modal');
+        const closeButtons = document.querySelectorAll('.close');
+
+        locationCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const location = card.getAttribute('data-location');
+                const modal = document.getElementById('modal-' + location);
+                modal.style.display = 'block';
+            });
+        });
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modals.forEach(modal => modal.style.display = 'none');
+            });
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+        // Tab switching functionality for Team
+        const teamTabButtons = document.querySelectorAll('.team-tab-btn');
+        const teamTabContents = document.querySelectorAll('.team-tab');
+
+        teamTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and tabs
+                teamTabButtons.forEach(btn => btn.classList.remove('active'));
+                teamTabContents.forEach(tab => tab.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding tab
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Modal functionality for Team
+        const teamMembers = document.querySelectorAll('.team-member');
+        const teamModals = document.querySelectorAll('.modal[id^="modal-"]'); // Select all modals starting with modal-
+        const teamCloseButtons = document.querySelectorAll('.modal[id^="modal-"] .close');
+
+        teamMembers.forEach(member => {
+            member.addEventListener('click', () => {
+                const memberId = member.getAttribute('data-member');
+                const modal = document.getElementById('modal-' + memberId);
+                if (modal) {
+                    modal.style.display = 'block';
+                }
+            });
+        });
+
+        teamCloseButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                teamModals.forEach(modal => modal.style.display = 'none');
+            });
+        });
+
+        // Close team modal when clicking outside
+        window.addEventListener('click', (event) => {
+            teamModals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script src="translate.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
